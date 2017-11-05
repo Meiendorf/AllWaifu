@@ -1,0 +1,33 @@
+@font-face {
+    font-family: "BravoRegular";
+    src: url("fonts/BravoRegular/BravoRegular.eot");
+    src: url("fonts/BravoRegular/BravoRegular.eot?#iefix")format("embedded-opentype"),
+    url("fonts/BravoRegular/BravoRegular.woff") format("woff"),
+    url("fonts/BravoRegular/BravoRegular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+body
+{
+    font-family: "BravoRegular";
+    font-weight: bold;
+    font-size : 25px;
+}
+.ans
+{
+    height: 200px;
+    width : 100%;
+    text-align : center;
+    margin : 20px 0px;
+    box-shadow: 6px 6px 6px rgba(0,0,0,.5);
+    color : #000;
+    border: 1px solid #000;
+    background-color: #fff;
+    font-family: "BravoRegular";
+    font-size : 40px;
+}
+#ques, #answ
+{
+    width : 100%;
+    margin: 10px 0px;
+}
