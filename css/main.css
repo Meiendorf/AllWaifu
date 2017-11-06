@@ -333,45 +333,7 @@ box-shadow: inset -1px 2px 90px -2px rgba(102,117,255,1);
 .main_footer
 {
 	background-color: rgba(0,0,0,0.4);
-	color : #fff;
-}
-.footer_ul
-{
-	font-size : 21px;
-	list-style-type: none;
-	margin: 1px;
-}
-.footer_ul li
-{
-	margin: 1px 10px;
-	display: inline-block;
-}
-.main_context a, .over_text  a,
-.main_footer a, .header a{
-  position: relative;
-  text-decoration: none;
-}
-.main_context a:before, .over_text a:before,
-.main_footer a:before, .header a:before {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 2px;
-  bottom: 0;
-  left: 0;
-  background-color: #fff;
-  visibility: hidden;
-  -webkit-transform: scaleX(0);
-  transform: scaleX(0);
-  -webkit-transition: all 0.3s ease-in-out 0s;
-  transition: all 0.3s ease-in-out 0s;
-}
-.main_context  a:hover:before, .over_text a:hover:before,
-.main_footer a:hover:before, .header a:hover:before
- {
-  visibility: visible;
-  -webkit-transform: scaleX(1);
-  transform: scaleX(1);
+
 }
 .context_title a:before
 {
