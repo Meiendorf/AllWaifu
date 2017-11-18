@@ -29,7 +29,7 @@
     {
         border-radius: 0;
     }
-    .desk_menu li:last-of-type a
+    .desk_menu li:last-of-type 
     {
         border-radius: 0px 0px 7px 7px;
     }
@@ -62,6 +62,14 @@
     .desk_menu li:first-of-type a
     {
         padding: 5px 5px;
+    }
+    .waif_img_cont
+    {
+        display: none;
+    }
+    .mobile_waif_title
+    {
+        display: block;
     }
 }
 
