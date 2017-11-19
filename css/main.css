@@ -63,7 +63,7 @@ body{
 	/*background-image: url(../images/bg_blue.png);*/
 	text-align: center;
 	color: #fff;
-	padding: 10px;
+	/*padding: 10px;*/
 }
 .logo
 {
@@ -464,4 +464,16 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', end
 .waif_cont_block.col-md-12
 {
 	margin-left : 0;
+}
+.waif+.waif
+{
+	margin-top : 10px;
+}
+#wcomments
+{
+	width : 100%;
+}
+.comm_but
+{
+	width : 100%;
 }
