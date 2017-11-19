@@ -242,7 +242,7 @@
                                             Теги
                                         </div>
                                         <div class="waif_cont_text">
-                                            Здесь будут теги ребяяят
+                                            В будущем ей потребуется набраться храбрости и настойчивости чтобы перейти на новый этап взаимоотношений с другими персонажами.
                                         </div> 
                                     </div> 
                                 </div>
@@ -260,8 +260,8 @@
                                     <input class="comm_but" type="button">
                                 </div>-->
                                 <div class="col-md-12">
-                                    <div id="mc-container"></div>
-                                        <a id="mc-link" href="http://cackle.me">Комментарии для сайта <b style="color:#4FA3DA">Cackl</b><b style="color:#F65077">e</b></a>
+                                    <div id="sigCommentsBlock"></div>
+                                    <a href="http://sigcomments.com" style="font-size: 0.6em;">Система комментирования SigComments</a>
                                 </div>
                             </div>
                         </div>
@@ -290,16 +290,16 @@
         </div>
     </footer>
     <script type="text/javascript">
-        cackle_widget = window.cackle_widget || [];
-        cackle_widget.push({widget: 'Comment', id: 56249});
-        (function() {
-            var mc = document.createElement('script');
-            mc.type = 'text/javascript';
-            mc.async = true;
-            mc.src = ('https:' == document.location.protocol ? 'https' : 'http') + '://cackle.me/widget.js';
-            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(mc, s.nextSibling);
+        (function(){
+            var host_id = '1183';
+            var script = document.createElement('script');
+            script.type = 'text/javascript';
+            script.async = true;
+            script.src = '//sigcomments.com/chat/?host_id='+host_id;
+            var ss = document.getElementsByTagName('script')[0]; 
+            ss.parentNode.insertBefore(script, ss);
         })();
-        </script>
+    </script>
     <script type="text/javascript">
         VK.Widgets.Group("vk_groups", {mode: 4, width: "auto", wide: 1, height: "400"}, 155417759);
     </script>
