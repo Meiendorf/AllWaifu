@@ -39,6 +39,14 @@
         box-shadow: none;
         padding: 5px 15px;
     }
+    .waif_author
+    {
+        display: none;
+    }
+    .xs-author
+    {
+        display: block;
+    }
 }
 
 /* Small Devices, Tablets */
@@ -69,7 +77,27 @@
     }
     .mobile_waif_title
     {
+        color : #fff;
         display: block;
+    }
+    .waif_follow
+    {
+        color : #fff;
+        float : none;
+        position: inherit;
+        text-align: center;
+    }
+    .waif_follow_but
+    {
+        font-size: 20px;
+    }
+    .waif_follow_but:hover
+    {
+        font-size : 20px;
+    }
+    .waif_follow_but:not(:hover)
+    {
+        font-size : 20px;
     }
 }
 

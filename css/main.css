@@ -402,6 +402,10 @@ box-shadow: inset -1px 2px 90px -2px rgba(102,117,255,1);
 {
 	color : #000;
 }
+.com_img img
+{
+	border-radius: 100px;
+}
 .com_img a:before
 {
 	background-color: rgba(0,0,0,0);
@@ -429,7 +433,7 @@ box-shadow: inset -1px 2px 90px -2px rgba(102,117,255,1);
 {
 	position: absolute;
 	width : 100%;
-	bottom : 1px;
+	bottom : 0;
 	font-size : 35px;
 	color : #fff;
 	font-weight: bold;
@@ -472,8 +476,105 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', end
 #wcomments
 {
 	width : 100%;
+	display: block;
+	overflow:hidden;
+	margin: 5px 0;
+
 }
 .comm_but
 {
 	width : 100%;
+	margin: 5px 0;
+	background-color: #006377;
+	border: none;
+	border-radius: 5px;
+	box-shadow:
+	   	0 1px rgba(255,255,255,.2) inset,
+	   	0 3px 5px rgba(0,1,6,.5),
+	   	0 0 1px 1px rgba(0,1,6,.2);
+	font-weight: bold;
+	color : #fff;
+}
+.waif_inp
+{
+	padding: 5px;
+}
+.waif .comments
+{
+	box-shadow : none;
+}
+.waif_author
+{
+	float : left;
+	text-align: left;
+	position: absolute;
+	bottom: 2px;
+	left : 4px;
+	font-size : 25px;
+}
+.waif_follow
+{
+	float : right;
+	text-align: right;
+	position: absolute;
+	bottom: 2px;
+	right :4px;
+	font-size : 25px;
+}
+.waif_follow_but
+{
+	display : inline-block;
+	margin: 3px;
+	cursor: pointer;
+	font-size : 30px;
+}
+.waif_follow_but:hover
+{
+	transition : 0.5s;
+	font-size : 33px;
+}
+.waif_follow_but:not(:hover)
+{
+	transition : 0.5s;
+	font-size : 30px;
+}
+.pop_div
+{
+	background-color: #000;
+	color : #fff;
+	border: 1px solid #fff;
+	border-radius: 5px;
+	width : 200px;
+	position: fixed;
+	bottom: 10px;
+	right: 10px; 
+	padding: 20px;
+	z-index: 999;
+	text-align: center;
+	background-color: rgba(0,0,0,0.0);
+	color : rgba(0,0,0,0.0);
+	border-color : rgba(0,0,0,0.0);}
+.pop_show
+{
+	background-color: rgba(0,0,0,1);
+	color : rgba(255,255,255,1);
+	/*border-color: rgba(255,255,255,1);*/
+	box-shadow: 6px 6px 6px rgba(0,0,0,.5);
+	transition: 1s;
+}
+.pop_hide
+{
+	background-color: rgba(0,0,0,0.0);
+	color : rgba(0,0,0,0.0);
+	border-color : rgba(0,0,0,0.0);
+	box-shadow: none;
+	transition: 1s;
+}
+.mobile_waif_title
+{
+	background-image: url(../images/bg_blue.png);
+}
+.xs-author
+{
+	display: none;
 }
