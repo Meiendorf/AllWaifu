@@ -47,6 +47,16 @@
     {
         display: block;
     }
+     .usl_title
+    {
+        margin-top: 0;
+        margin : 0 15px;
+        font-size: 24px;
+    }
+    .user_waif_list li:last-of-type
+    {
+        display: none;
+    }
 }
 
 /* Small Devices, Tablets */
@@ -63,6 +73,11 @@
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px) {
+    .user_inf_titles
+    {
+        margin-top : 20px;
+        margin-bottom: 10px;
+    }
     .over_text
     {
         display: none;
@@ -98,6 +113,10 @@
     .waif_follow_but:not(:hover)
     {
         font-size : 20px;
+    }
+    .col-xs-6.waif_rec
+    {
+        width : 100%;
     }
 }
 

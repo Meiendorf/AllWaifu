@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]><html lang="ru" class="lt-ie9 lt-ie8 lt-ie7"><![endif]-->
+<!--[if IE 7]><html lang="ru" class="lt-ie9 lt-ie8"><![endif]-->
+<!--[if IE 8]><html lang="ru" class="lt-ie9"><![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="ru">
+<!--<![endif]-->
+<head>
+    <meta charset="utf-8" />
+    <title>AllWaifu</title>
+    <meta name="description" content="" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="favicon.png" />
+    <link rel="stylesheet" href="libs/bootstrap/bootstrap-grid-3.3.1.min.css" />
+    <link rel="stylesheet" href="libs/font-awesome-4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="libs/fancybox/jquery.fancybox.css" />
+    <link rel="stylesheet" href="libs/owl-carousel/owl.carousel.min.css" />
+    <link rel="stylesheet" href="libs/owl-carousel/owl.theme.css" />
+    <link rel="stylesheet" href="libs/countdown/jquery.countdown.css" />
+    <link rel="stylesheet" href="css/fonts.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/media.css" />
+    <link rel="stylesheet" href="css/pagination.css"/>
+    <script src="js/vk_openapi.js"></script>
+</head>
+<body>
+    <!--[if lt IE 9]>
+    <script src="libs/html5shiv/es5-shim.min.js"></script>
+    <script src="libs/html5shiv/html5shiv.min.js"></script>
+    <script src="libs/html5shiv/html5shiv-printshiv.min.js"></script>
+    <script src="libs/respond/respond.min.js"></script>
+    <![endif]-->
+    <div class="header">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="auth_icons soc_buttons hidden-lg hidden-md">
+                        <a href="#">
+                            <i class="fa fa-user" aria-hidden="true"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fa fa-user-plus" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                    <div class="auth_links">
+                        <a href="#">Вход</a>/<a href="#">Регистрация</a>
+                    </div>
+                    <div class="soc_buttons">
+                        <a href="#">
+                            <i class="fa fa-vk" aria-hidden="true"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fa fa-telegram" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="block" ></div>
+    <div class="sub_head">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="logo">
+                        All Waifu
+                    </div>
+                    <nav class="main_menu clearfix shadow">
+                        <div class="men_but hidden-lg hidden-md">
+                            <a href="#" class="men_bars">
+                                <i class="fa fa-bars" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                        <div class="desk_menu clearfix">
+                            <ul>
+                                <li class="hidden-lg hidden-md shadow">
+                                    <div class="row" style="padding: 0px 15px 0px 15px">
+                                        <div class="col-xs-10" style="padding: 0">
+                                            <div class="search_cont search_cont_mini">
+                                                <input type="text" class="search">
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-2" style="padding: 0;">
+                                            <div class="search_icon">
+                                                <a href="#"><i class="fa fa-search" aria-hidden="true"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>  
+                                </li>
+                                <li class="active"><a class="men_s" href="#">Главная</a></li>
+                                <li><a href="#">Новости</a></li>
+                                <li><a href="#">Категории</a></li>
+                                <li><a href="#">Добавление</a></li>
+                                <li><a class="men_e" href="#">Помощь</a></li>
+                            </ul>
+                            <div class="b_search">
+                                <div class="search_icon">
+                                    <a href="#"><i class="fa fa-search" aria-hidden="true"></i></a>
+                                </div>
+                                <div class="search_cont">
+                                    <input type="text" class="search">
+                                </div>
+                            </div>
+                        </div>
+                    </nav>
+                    <h1 class="sub_logo hidden-xs">User Profile</h1>
+                    <h1 class="sub_logo_min"> User Profile </h1>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="main_context">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 user_content" style="padding: 0">
+                    <div class="user_main">
+                        <div class="row">
+                            <div class="col-md-2">
+                                <div class="user_img">
+                                    <img src="images/shin.png" alt="User photo"/>
+                                </div>
+                            </div>
+                            <div class="col-md-10">
+                                <div class="user_info">
+                                    <div class="user_status">
+                                        Admin
+                                    </div>
+                                    <div class="user_name">
+                                        Shinigami_Shin
+                                    </div>
+                                    <div class="add_info">
+                                        <ul>
+                                            <li>Рома Мельник</li>
+                                            <li>15 лет</li>
+                                            <li><a href="#">vk.com</a></li>
+                                            <li>на сайте с 27.11.17</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-12"><br/></div>
+                            <div class="col-xs-12 col-sm-12 col-md-4">
+                                <div class="waif_cont_title">
+                                    О себе.
+                                </div>
+                                <div class="user_biog">
+                                    Ну, я ебан, уже довольно старый ебан, схых. А далее для заполнения контентом.
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui, temporibus exercitationem. Suscipit consectetur doloribus aliquam minus laudantium optio, dolore earum cupiditate. Labore ad consequuntur fugiat magni, ducimus illum. Vero magnam, nulla libero. Minus consequuntur ipsum labore, voluptatibus quis saepe quas illum. Recusandae vero, voluptatibus non asperiores quam nisi, animi repellendus vitae cum excepturi commodi. Possimus, soluta minima minus nemo non reiciendis corrupti libero esse provident magni aliquid nulla sed consequatur praesentium placeat quisquam ad dolore cum laborum facilis vel cupiditate eligendi accusantium natus odio.
+                                </div>
+                            </div>
+                            <div class="col-xs-6 col-sm-6 col-md-4 waif_rec">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="user_inf_titles">
+                                            <i class="fa fa-plus user_titles_arrow" aria-hidden="true" style="float : left;"></i>
+                                            <a href="#">
+                                            Добавленное
+                                            <i class="fa fa-caret-right user_titles_arrow" aria-hidden="true"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="user_recomend">
+                                        <ul class="user_waif_list">
+                                            <li class="col-md-12">
+                                                <div class="col-md-6 user_waif_img">
+                                                    <a href="#">
+                                                        <img src="images/haruna.png" alt="Ошибка"/>
+                                                    </a>
+                                                </div>
+                                                <div class="col-md-6 usl_title"> 
+                                                    <a href="#">Сайренджи Харуна</a>
+                                                </div>
+                                            </li>
+                                            <li class="col-md-12">
+                                                <div class="col-md-6 user_waif_img">
+                                                    <a href="#">
+                                                        <img src="images/momo.jpg" alt="Ошибка"/>
+                                                    </a>
+                                                </div>
+                                                <div class="col-md-6 usl_title"> 
+                                                    <a href="#">Момо Бела Девилюк</a>
+                                                </div>
+                                            </li>
+                                            <li class="col-md-12">
+                                                <div class="col-md-6 user_waif_img">
+                                                    <a href="#">
+                                                        <img src="images/kuroneko.jpg" alt="Ошибка"/>
+                                                    </a>
+                                                </div>
+                                                <div class="col-md-6 usl_title"> 
+                                                    <a href="#">Рури Гоко</a>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xs-6 col-sm-6 col-md-4 waif_rec">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="user_inf_titles">
+                                            <i class="fa fa-heart user_titles_arrow" aria-hidden="true" style="float : left;"></i>
+                                            <a href="#">
+                                            Избранное
+                                            <i class="fa fa-caret-right user_titles_arrow" aria-hidden="true"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="user_recomend">
+                                        <ul class="user_waif_list">
+                                            <li class="col-md-12">
+                                                <div class="col-md-6 user_waif_img">
+                                                    <a href="#">
+                                                        <img src="images/nagato.jpg" alt="Ошибка"/>
+                                                    </a>
+                                                </div>
+                                                <div class="col-md-6 usl_title"> 
+                                                    <a href="#">Нагато Юки</a>
+                                                </div>
+                                            </li>
+                                            <li class="col-md-12">
+                                                <div class="col-md-6 user_waif_img">
+                                                    <a href="#">
+                                                        <img src="images/haruhi.jpg" alt="Ошибка"/>
+                                                    </a>
+                                                </div>
+                                                <div class="col-md-6 usl_title"> 
+                                                    <a href="#">Судзумия Харухи</a>
+                                                </div>
+                                            </li>
+                                            <li class="col-md-12">
+                                                <div class="col-md-6 user_waif_img">
+                                                    <a href="#">
+                                                        <img src="images/tohsaka.jpg" alt="Ошибка"/>
+                                                    </a>
+                                                </div>
+                                                <div class="col-md-6 usl_title"> 
+                                                    <a href="#">Тосака Рин</a>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <h1 class="sub_logo" align="center">Комментарии</h1>
+                </div>
+                <div class="waif col-md-12">
+                    <div class="waif_inp">
+                         <div class="row">
+                            <div class="col-md-12">
+                                <div class="waif_cont_title">
+                                        Оставить свой
+                                </div>
+                            </div>
+                            <div class="col-md-10">
+                                <textarea rows="1" placeholder="Текст комментария" 
+                                 name="wcomments" id="wcomments"></textarea>
+                            </div>
+                            <div class="col-md-2">
+                                <button class="comm_but">
+                                    Отправить
+                                </button>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="waif_cont_title">
+                                        Последние
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                <div class="comments">
+                                    <ul>
+                                        <li>
+                                            <div class="row">
+                                                <div class="col-xs-3 col-sm-2 col-md-1 com_img">
+                                                    <a href="#">
+                                                        <img src="https://pinguem.ru/static/img/avatar.c2a08a3fc438.png"/>
+                                                    </a>
+                                                </div>
+
+                                                <div class="col-xs-9 col-sm-10 col-md-11">
+                                                    <div class="com_title">
+                                                        <a href="#">
+                                                            Рома Мельник
+                                                        </a>
+                                                    </div>
+                                                    <div class="com_text">
+                                                        Ну, неплохое такое
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="row">
+                                                <div class="col-xs-3 col-sm-2 col-md-1 com_img">
+                                                    <a href="#">
+                                                        <img src="https://pinguem.ru/static/img/avatar.c2a08a3fc438.png"/>
+                                                    </a>
+                                                </div>
+                                                <div class="col-xs-9 col-sm-10 col-md-11">
+                                                    <div class="com_title">
+                                                        <a href="#">
+                                                            Нацуки Минамия
+                                                        </a>
+                                                    </div>
+                                                    <div class="com_text">
+                                                        Ну, в принципе, неплохо, да, мне понравилось, очень даже ничего
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="row">
+                                                <div class="col-xs-3 col-sm-2 col-md-1 com_img">
+                                                    <a href="#">
+                                                        <img src="https://pinguem.ru/static/img/avatar.c2a08a3fc438.png"/>
+                                                    </a>
+                                                </div>
+                                                <div class="col-xs-9 col-sm-10 col-md-11">
+                                                    <div class="com_title">
+                                                        <a href="#">
+                                                            Грегори Гордеевегори
+                                                        </a>
+                                                    </div>
+                                                    <div class="com_text">
+                                                        Прекольна :D
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="main_footer">
+        <div class="container" align="center">
+            <ul class="footer_ul">
+                <li style="color : #9D9D9D; font-weight: normal;">
+                    Copyright © 2017 Meiendorf Inc.
+                </li>
+                <li>
+                    <a href="other_files/privacypolicy.htm" style="color:#fff;"> 
+                    Privacy Polisy
+                    </a>
+                </li>
+                <li>
+                    <a href="sitemap.xml" style="color:#fff;">
+                    Sitemap
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="pop_div">
+        Добавлено в избранное
+        </div>
+    </footer>
+    
+    <script type="text/javascript">
+        VK.Widgets.Group("vk_groups", {mode: 4, width: "auto", wide: 1, height: "400"}, 155417759);
+    </script>
+    <script src="libs/jquery/jquery-1.11.1.min.js"></script>
+    <script src="libs/jquery-mousewheel/jquery.mousewheel.min.js"></script>
+    <script src="libs/fancybox/jquery.fancybox.pack.js"></script>
+    <script src="libs/waypoints/waypoints-1.6.2.min.js"></script>
+    <script src="libs/scrollto/jquery.scrollTo.min.js"></script>
+    <script src="libs/owl-carousel/owl.carousel.min.js"></script>
+    <script src="libs/countdown/jquery.plugin.js"></script>
+    <script src="libs/countdown/jquery.countdown.min.js"></script>
+    <script src="libs/countdown/jquery.countdown-ru.js"></script>
+    <script src="libs/landing-nav/navigation.js"></script>
+    <script src="js/common.js"></script>
+    <!-- Yandex.Metrika counter --><!-- /Yandex.Metrika counter -->
+    <!-- Google Analytics counter --><!-- /Google Analytics counter -->
+</body>
+</html>
