@@ -711,4 +711,122 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', end
 {
 	background-color: rgba(0,0,0,0);
 }
+
+.load_image
+{
+	
+}
+.load_image_cont
+{
+	font-size : 17px;
+}
+.add_waif
+{
+	padding-bottom: 10px;
+}
+.chapter_row
+{
+	margin: 20px 10px;
+}
+.chapter_input
+{
+	width : 100%;
+}
+.chapter_label
+{
+	font-weight: bold;
+	font-size : 23px;
+	text-align: right;
+}
+.content_chapter
+{
+	margin: 20px 0px 10px 0px;
+}
+.description_chapter
+{
+	margin-top: 25px;
+	border-radius: 5px;
+	box-shadow:
+	   	0 1px rgba(255,255,255,.2) inset,
+	   	0 3px 5px rgba(0,1,6,.5),
+	   	0 0 1px 1px rgba(0,1,6,.2);
+}
+.desc_title
+{
+	padding : 5px;
+	position: relative;
+	text-align: center;
+	border-radius: 5px;
+	box-shadow:
+	   	0 0px rgba(255,255,255,.2) inset,
+	   	0 0px 0px rgba(0,1,6,.5),
+	   	0 0 1px 1px rgba(0,1,6,.2);
+}
+
+.desc_select, .desc_select_title
+{
+	float : left;
+	font-size: 21px;
+	margin-top : 5px;
+	border-radius: 5px;
+}
+.desc_select_title
+{
+	margin: 5px 10px;
+}
+.field_input
+{
+	width : 100%;
+	text-align: center;
+	border : 0px;
+	padding : 3px;
+}
+.desc_field_row
+{
+	font-weight: bold;
+	font-size: 21px;
+	margin: 5px;
+	padding : 3px;
+	padding-top: 11px;
+}
+.field_add_but
+{
+	float : right;
+	width : 15%;
+	margin: 10px;
+	margin-right: 20px;
+}
+.desc_field_text
+{
+	padding : 3px;
+	width : 100%;
+	font-weight : normal;
+}
+.delete_el_but
+{
+	position: absolute;
+	top : -12px;
+	right: -5px;
+	font-size: 25px;
+	font-weight: bold;
+}
+.desc_field_content > .delete_el_but
+{
+	right: 11px;
+	top : -10px;
+	font-size : 20px;
+}
+.add_but_cont
+{
+	margin-top : 15px;
+}
+.send_cont_text
+{
+	font-size: 17px;
+	margin-top : 3px;
+}
+.load_but_mobile
+{
+	display: none;
+}
 /*Что-то гитхаб не робит, ыы */

@@ -6,6 +6,14 @@
     {
         display: none;
     }
+        .load_but
+    {
+        display: none;
+    }
+    .load_but_mobile
+    {
+        display: block;
+    }
 }
 
 /* Medium Devices, Desktops */
@@ -57,6 +65,28 @@
     {
         display: none;
     }
+    .chapter_label
+    {
+        text-align: center;
+    }
+    .load_but
+    {
+        display: block;
+    }
+    .load_but_mobile
+    {
+        display: none;
+    }
+    .send_but_cont
+    {
+        text-align: center;
+    }
+    .send_but_cont > .field_add_but
+    {
+        float : none;
+        width: 30%;
+        margin : 5px 0px;
+    }
 }
 
 /* Small Devices, Tablets */
@@ -73,6 +103,10 @@
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px) {
+    .col-md-9, .col-md-3
+    {
+        padding : 0px 0px;
+    }
     .user_inf_titles
     {
         margin-top : 20px;
@@ -86,7 +120,7 @@
     {
         padding: 5px 5px;
     }
-    .waif_img_cont
+    .waif_img_cont, .load_but
     {
         display: none;
     }
@@ -117,6 +151,24 @@
     .col-xs-6.waif_rec
     {
         width : 100%;
+    }
+    .load_but_mobile
+    {
+        display: block;
+    }
+    .add_but_cont
+    {
+        text-align: center;
+    }
+    .add_but_cont > .field_add_but
+    {
+        width : 90%;
+        float: none;
+        margin-right: 0px;
+    }
+    .desc_field_content > .delete_el_but
+    {
+        right : -4px;
     }
 }
 
