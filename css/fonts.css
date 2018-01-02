@@ -49,7 +49,11 @@
 	font-style: normal;
 	font-weight: normal;
 }
-/* font-family: "BravoRegular"; */
+/* font-family: "InkTankRegular"; */
+@font-face {
+	font-family: "InkTankRegular";
+	src: url("../fonts/InkTank.regular.ttf");
+}
 @font-face {
 	font-family: "BravoRegular";
 	src: url("../fonts/BravoRegular/BravoRegular.eot");

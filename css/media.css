@@ -1,12 +1,43 @@
 /*==========  Desktop First Method  ==========*/
 
 /* Large Devices, Wide Screens */
+@media only screen and (max-width : 1300px){
+    div.text_mask
+    {
+        width: 45%;
+        font-size: 40px;
+    }
+}
+@media only screen and (max-width : 1150px){
+    div.cool_content
+    {
+        display: none; 
+    }
+    div.cool_mobile_content
+    {
+        display: block;
+    }
+    div.main_grid
+    {
+        grid-gap : 10px;
+        grid-template-columns: 1fr minmax(335px, auto) 1fr;
+        grid-template-areas: 
+            "content content content"
+            ". auth ."
+            "footer footer footer";
+    }
+    form.auth_form
+    {
+        margin : 25px 0px 55px 0px;
+    }
+}
+
 @media only screen and (max-width : 1200px) {
     .vk_news
     {
         display: none;
     }
-        .load_but
+    .load_but
     {
         display: none;
     }

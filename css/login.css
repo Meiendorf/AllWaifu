@@ -1,0 +1,149 @@
+.cool_content
+{
+    color : #fff;
+    font-size: 35px;
+    grid-area: content;
+    position: relative;
+    /*display: none;*/
+}
+.cool_mobile_content
+{
+    grid-area : content;
+    display: none;
+    width: 100%;
+    font-family: InkTankRegular;
+    text-align: center;
+    font-size: 40px;
+    color : #fff;
+}
+.text_mask
+{
+    position: absolute;
+    top : 30%;
+    width: 600px;
+    left: 45%;
+    font-family: InkTankRegular;
+    font-size: 50px;
+}
+input
+{
+    color : #000;
+    width: 100%;
+}
+.auth_form
+{
+    grid-area: auth;
+    background-color: rgba(13,13,13,.5);
+    color : #fff;
+    margin-right: 10px;
+    font-size: 20px;
+    border-radius: 5px;
+    box-shadow:
+        0 1px rgba(255,255,255,.2) inset,
+        0 3px 5px rgba(0,1,6,.5),
+        0 0 1px 1px rgba(0,1,6,.2);
+}
+.login_input
+{
+    margin : 0px 15px 5px 15px;
+}
+.login_label
+{
+    padding-left: 25px;
+}
+.lost_pass
+{
+    font-size: 17px;
+    margin: 7px 25px;
+}
+.login_but
+{
+    margin: 10px 35px;
+    font-size: 23px;
+}
+.social_login_list
+{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+.social_login_list > li
+{
+    margin : 3px 7px;
+    display: inline-block;
+    transition: 0.3s;
+}
+.social_login_list > li > a:before
+{
+    background-color: rgba(0,0,0,0);
+}
+.social_login_list > li:hover
+{
+    transition:  0.3s;
+    box-shadow: 0px 0px 10px 1px rgba(6,14,176,1);
+}
+.social_login_list img
+{
+    width: 40px;
+    height: 40px;
+}
+.main_grid
+{
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: 3fr minmax(335px, auto);
+    grid-template-areas: 
+        "content auth"
+        "footer footer";
+}
+.login_to_regist
+{
+    display: grid;
+    padding: 7px;
+    grid-template-columns: 1fr 1fr;
+}
+.login_to_regist > .waif_cont_title
+{
+    font-size: 20px;
+    margin-top: 8px;
+}
+.comm_but
+{
+    padding: 3px;
+}
+.login_input > input
+{
+    padding: 1px 3px;
+    border : none;
+    border-radius: 3px;
+    box-sizing : content-box;
+    box-shadow: 0px 1px 4px 0px rgba(168, 168, 168, 0.6) inset;
+    transition: all 0.2s linear;
+}
+.login_input > input:active,
+.login_input > input:focus{
+    box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 1) inset;
+}
+.regist_form
+{
+    grid-area: auth;
+    display: none;
+    align-self: center;
+}
+.login_form
+{
+    grid-area : auth;
+    align-self: center;
+}
+.auth_form > hr
+{
+    margin : 0;
+    background-color: #A9A9A9;
+    color : #A9A9A9;
+}
+.main_footer
+{
+    margin: 0;
+    grid-area: footer;
+}

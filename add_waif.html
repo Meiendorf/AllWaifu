@@ -18,7 +18,6 @@
     <link rel="stylesheet" href="css/fonts.css" />
     <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="css/media.css" />
-    <link rel="stylesheet" href="css/pagination.css"/>
 </head>
 <body>
     <!--[if lt IE 9]>
@@ -174,6 +173,7 @@
                                 </div>
                             </div>
                         </div>
+                        
                         <div class="col-md-12">
                             <div class="description_chapter">
                                 <div class="desc_title">
@@ -207,8 +207,10 @@
                                             </div>
                                         </div>
                                     </div>
+                                    <div class="col-md-12" style="padding: 0">
+                                        <hr style="margin: 0"/>
+                                    </div>
                                 </div>
-                                <hr style="margin: 0"/>
                                 <div class="row desc_field_row">
                                     <div class="col-md-3">
                                         <div class="desc_field_title">
@@ -224,8 +226,10 @@
                                             </div>
                                         </div>
                                     </div>
+                                    <div class="col-md-12" style="padding: 0">
+                                        <hr style="margin: 0"/>
+                                    </div>
                                 </div>
-                                <hr style="margin: 0"/>
                                 <div class="row desc_field_row">
                                     <div class="col-md-3">
                                         <div class="desc_field_title">
@@ -241,11 +245,41 @@
                                             </div>
                                         </div>
                                     </div>
+                                    <div class="col-md-12" style="padding: 0">
+                                        <hr style="margin: 0"/>
+                                    </div>
                                 </div>
-                                <hr style="margin: 0"/>
-                                <div class="row ">
+                                <div class="row">
                                     <div class="col-md-12 add_but_cont">
-                                        <input type="button" class="comm_but field_add_but" value="Добавить" name="AddNewField" id="AddNewField"/>
+                                        <input type="button" class="comm_but field_add_but field_but" value="Добавить"/>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="description_chapter">
+                                <div class="desc_title">
+                                    <div class="waif_cont_title">
+                                        <div class="desc_select_title">
+                                            Размер 
+                                        </div>
+                                        <select class="desc_select">
+                                            <option>0.5</option>
+                                            <option>1</option>
+                                            <option>0.3</option>
+                                        </select>
+                                        <input class="field_input" placeholder="Название части (нажмите для редактирования)" (Нажмите для редактирования)" type="text"/>
+                                    </div>
+                                    <div class="delete_el_but">
+                                        <i class="fa fa-times-circle" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                                <div class="row desc_field_row">
+                                    <div class="col-md-12">
+                                        <div class="desc_field_content">
+                                            <textarea rows="3" placeholder="Содержимое части" 
+                                            class="desc_field_text"></textarea>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -266,9 +300,9 @@
                             </div>
                         </div>
                         <div class="col-md-12 add_but_cont send_but_cont"> 
-                            <input type="button" class="comm_but field_add_but" value="Отправить" name="AddNewField" id="AddNewField"/>
-                            <input type="button" class="comm_but field_add_but" value="Добавить с полями" name="AddNewField" id="AddNewField"/>
-                            <input type="button" class="comm_but field_add_but" value="Добавить без полей" name="AddNewField" id="AddNewField"/>
+                            <input type="button" class="comm_but field_add_but" value="Отправить"/>
+                            <input type="button" onclick="addNewChapter('field')" class="comm_but field_add_but" value="Добавить с полями" id="addFieldBut"/>
+                            <input type="button" onclick="addNewChapter('text')" class="comm_but field_add_but" value="Добавить без полей" id="addTextBut"/>
                             <div class="send_cont_text">
                                 Прежде чем появиться на сайте, ваше описание должно быть проверено администрацией. После окончания проверки мы сразу же вас уведомим.
                             </div>
