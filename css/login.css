@@ -16,6 +16,12 @@
     font-size: 40px;
     color : #fff;
 }
+.err_message
+{
+    font-size : 18px;
+    color : red;
+    margin-left : 20px;
+}
 .text_mask
 {
     position: absolute;
