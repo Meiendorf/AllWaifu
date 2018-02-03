@@ -544,6 +544,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', end
 	transition : 0.5s;
 	font-size : 30px;
 }
+.row{
+    margin-left : -10px;
+    margin-right : -10px;
+}
 .pop_div
 {
 	background-color: #000;
@@ -840,5 +844,103 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', end
 .load_but_mobile
 {
 	display: none;
+}
+.edit_photo_grid
+{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	margin : 10px;
+}
+.edit_grid
+{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	background-color: #fff;
+	box-shadow: 6px 6px 6px rgba(0,0,0,.5);
+}
+.edit_img
+{
+	width: 150px;
+	height: 150px;
+}
+.edit_title
+{
+	grid-column : 1 / -1;
+	color : #000;
+}
+.edit_login_grid
+{
+	display: grid;
+	grid-template-columns: 4fr 1fr;
+	grid-template-rows: 24px 72px 72px;
+}
+.edit_el
+{
+	grid-column: 1;
+	display: grid;
+	grid-template-columns: 1fr 4fr;
+	grid-template-rows: 36px 36px;
+}
+.edit_pass_grid
+{
+	grid-column: 1 / -1;
+	display: grid;
+	grid-template-columns : 1fr 2fr 1fr;
+	grid-gap : 10px;
+}
+.edit_pass_el
+{
+	grid-column: 2/2;
+}
+.edit_custom_el > .chapter_label, 
+.edit_pass_el > .chapter_label
+{
+	text-align: center;
+}
+.edit_el > .chapter_label
+{
+	margin-right: 10px;
+}
+.edit_custom_grid
+{
+	grid-column: 1 / -1;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-areas: 
+			"custom_desc custom_name"
+			"custom_desc custom_url"
+			". save_butt"
+}
+.edit_custom_el
+{
+	padding: 10px;
+}
+.edit_custom_name
+{
+	grid-area: custom_name;
+	padding: 5px;
+	margin-top: 10px;
+}
+.edit_custom_url
+{
+	grid-area: custom_url;
+	padding: 5px;
+	margin-bottom: 8px;
+}
+.edit_custom_desc
+{
+	grid-area: custom_desc;
+}
+.save_button
+{
+	grid-area : save_butt;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-gap: 15px;
+	margin-right: 5px;
+}
+#SaveAll
+{
+	grid-column: 3;
 }
 /*Что-то гитхаб не робит, ыы */
