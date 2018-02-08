@@ -404,7 +404,7 @@ box-shadow: inset -1px 2px 90px -2px rgba(102,117,255,1);
 {
 	border-radius: 100px;
 }
-.com_img a:before
+.com_img a:before, .content_image a:before
 {
 	background-color: rgba(0,0,0,0);
 }
@@ -942,5 +942,25 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', end
 #SaveAll
 {
 	grid-column: 3;
+}
+.empty_block_image
+{
+	width: 25%;
+}
+.waif_inp
+{
+	padding-bottom: 0px;
+}
+.empty_block
+{
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+}
+.empty_block > .waif_cont_title
+{
+	margin : auto;
+	color : cornflowerblue;
 }
 /*Что-то гитхаб не робит, ыы x2 */

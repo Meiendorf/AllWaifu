@@ -167,6 +167,10 @@
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px) {
+    .empty_block_image
+    {
+        width : 60%;
+    }
     .edit_custom_grid
     {
         grid-template-areas: 
