@@ -274,6 +274,7 @@ box-shadow: inset -1px 2px 90px -2px rgba(102,117,255,1);
 	/*background-image: url(../images/bg_blue.png);*/
 	/*background-color: #fff;*/
 	color : #fff;
+	margin-bottom : 45px;
 }
 .news_item
 {
@@ -330,7 +331,7 @@ box-shadow: inset -1px 2px 90px -2px rgba(102,117,255,1);
 {
 	background-color: rgba(0,0,0,0.4);
 	color : #fff;
-	margin-top : 10px;
+	margin-top : -35px;
 }
 .footer_ul
 {
@@ -962,5 +963,20 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', end
 {
 	margin : auto;
 	color : cornflowerblue;
+}
+.error_block
+{
+	background-color: #fff;
+	text-align: center;
+	box-shadow: 6px 6px 6px rgba(0,0,0,.5);
+}
+.error_desc
+{
+	font-size: 35px;
+}
+.error_img
+{
+	width : 30%;
+	margin-left: 15px;
 }
 /*Что-то гитхаб не робит, ыы x2 */
