@@ -1,14 +1,37 @@
 /*==========  Desktop First Method  ==========*/
 
 /* Large Devices, Wide Screens */
+@media only screen and (min-height : 849px){
+    .main_footer
+    {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+    }
+    html
+    {
+        min-height: 100%;
+        position: relative;
+    }
+}
 @media only screen and (max-width : 1300px){
     div.text_mask
     {
         width: 45%;
         font-size: 40px;
     }
+    .heaven_menu
+    {
+        grid-template-columns: 3fr 3fr 1fr;
+    }
 }
 @media only screen and (max-width : 1150px){
+
+    .header_menu
+    {
+        grid-template-columns: 1fr 1fr 2fr 1fr 1fr;
+    }
+
     div.cool_content
     {
         display: none; 
@@ -33,6 +56,10 @@
 }
 
 @media only screen and (max-width : 1200px) {
+    .heaven_menu_logo_cont
+    {
+        grid-template-columns: 0fr 1fr 2fr;
+    }
     .vk_news
     {
         display: none;
@@ -53,6 +80,27 @@
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 991px) {
+    .heaven_links
+    {
+        display: none;
+    }
+    .heaven_menu_logo_cont
+    {
+        display: none;
+    }
+    .heaven_menu
+    {
+        margin-top: 0;
+        grid-template-columns: 1fr 100px;
+    }
+    .heaven_dropdown
+    {
+        grid-column : 2;
+    }
+    .slideout_button
+    {
+        display: block;
+    }
     .edit_photo_grid
     {
         grid-template-columns: 1fr 1fr;
@@ -132,6 +180,13 @@
     }
 }
 
+@media only screen and (max-width: 940px){
+    .header_menu
+    {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas : "h_logo h_links h_login";
+    }
+}
 /* Small Devices, Tablets */
 @media only screen and (max-width : 767px) {
     .main_menu
@@ -168,9 +223,27 @@
         grid-column: 2 / 2;
     }
 }
+@media only screen and (max-width: 600px){
+    .header_links
+    {
+        display: none;
+    }
+    .header_menu
+    {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: "h_logo h_login";
+    }
+}
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px) {
+
+    .header_logo_text
+    {
+        display: none;
+    }
+
+
     .empty_block_image
     {
         width : 60%;
@@ -283,7 +356,12 @@
     }
 }
 /* Custom, iPhone Retina */
+
 @media only screen and (max-width : 320px) {
+    
+}
+
+@media only screen and (max-width : 300px) {
     
 }
 

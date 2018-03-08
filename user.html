@@ -22,6 +22,7 @@
     <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="css/media.css" />
     <link rel="stylesheet" href="css/pagination.css"/>
+    <link href='https://fonts.googleapis.com/css?family=Orbitron' rel='stylesheet'>
 </head>
 <body>
     <!--[if lt IE 9]>
@@ -30,85 +31,111 @@
     <script src="libs/html5shiv/html5shiv-printshiv.min.js"></script>
     <script src="libs/respond/respond.min.js"></script>
     <![endif]-->
-    <div class="header">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="auth_icons soc_buttons hidden-lg hidden-md">
-                        <a href="#">
-                            <i class="fa fa-user" aria-hidden="true"></i>
-                        </a>
-                        <a href="#">
-                            <i class="fa fa-user-plus" aria-hidden="true"></i>
-                        </a>
-                    </div>
-                    <div class="auth_links">
-                        <a href="#">Вход</a>/<a href="#">Регистрация</a>
-                    </div>
-                    <div class="soc_buttons">
-                        <a href="#">
-                            <i class="fa fa-vk" aria-hidden="true"></i>
-                        </a>
-                        <a href="#">
-                            <i class="fa fa-telegram" aria-hidden="true"></i>
-                        </a>
-                    </div>
-                </div>
+    <nav id="slideout_menu"> 
+        <div class="slideout_header"> 
+            <div class="heaven_search">
+                <input type="text" id="heaven_inp" placeholder="Поиск по сайту">
             </div>
         </div>
-    </div>
-    <div class="block" ></div>
-    <div class="sub_head">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="logo">
-                        All Waifu
-                    </div>
-                    <nav class="main_menu clearfix shadow">
-                        <div class="men_but hidden-lg hidden-md">
-                            <a href="#" class="men_bars">
-                                <i class="fa fa-bars" aria-hidden="true"></i>
-                            </a>
-                        </div>
-                        <div class="desk_menu clearfix">
-                            <ul>
-                                <li class="hidden-lg hidden-md shadow">
-                                    <div class="row" style="padding: 0px 15px 0px 15px">
-                                        <div class="col-xs-10" style="padding: 0">
-                                            <div class="search_cont search_cont_mini">
-                                                <input type="text" class="search">
-                                            </div>
-                                        </div>
-                                        <div class="col-xs-2" style="padding: 0;">
-                                            <div class="search_icon">
-                                                <a href="#"><i class="fa fa-search" aria-hidden="true"></i></a>
-                                            </div>
-                                        </div>
-                                    </div>  
-                                </li>
-                                <li class="active"><a class="men_s" href="#">Главная</a></li>
-                                <li><a href="#">Новости</a></li>
-                                <li><a href="#">Категории</a></li>
-                                <li><a href="#">Добавление</a></li>
-                                <li><a class="men_e" href="#">Помощь</a></li>
-                            </ul>
-                            <div class="b_search">
-                                <div class="search_icon">
-                                    <a href="#"><i class="fa fa-search" aria-hidden="true"></i></a>
-                                </div>
-                                <div class="search_cont">
-                                    <input type="text" class="search">
-                                </div>
-                            </div>
-                        </div>
-                    </nav>
-                    <h1 class="sub_logo hidden-xs">User Profile</h1>
-                    <h1 class="sub_logo_min"> User Profile </h1>
-                </div>
+        <ul class="main_slideout_menu">
+            <li>
+                <a href="#">
+                    Главная
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    Категории
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    Добавление
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                   Новости 
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    Помощь
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <main id="main_el" style="height: 100%">
+    <nav class="heaven_menu">
+        <div class="slideout_button"> 
+            <i class="fa fa-bars" aria-hidden="true"></i>
+        </div>
+        <div class="heaven_menu_logo_cont">
+            <a href="#" style="grid-column: 2">
+                <img src="images/logo_z.svg" class="heaven_menu_logo"/>
+            </a>
+            <div class="heaven_search">
+                <input type="text" id="heaven_inp" placeholder="Поиск по сайту">
             </div>
         </div>
-    </div>
+        <div class="heaven_links">
+            <ul>
+                <li>
+                    <a href="#">
+                        Главная
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        Категории
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        Добавление
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                       Новости 
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        Помощь
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="header_login header_dropdown heaven_dropdown cl-effect-5">
+                <div class="user_dropdown">
+                    <div class="user_dropdown_text" style="display: inline; margin-right: 5px;">
+                        Рома
+                    </div>
+                    <img src="https://pp.userapi.com/c841130/v841130814/52d87/tPiu_dLq0hA.jpg" class="user_dropdown_img">
+                    <i class="fa fa-angle-down" aria-hidden="true"></i>
+                </div>
+                <ul class="dd_menu cl-effect-5">
+                    <li>
+                        <a href="#">
+                            <span data-hover="Моя страница">Моя страница</span>
+                        </a>
+                    </li>
+                     <li>
+                        <a href="#">
+                            <span data-hover="Настройки">Настройки</span>
+                        </a>
+                    </li>
+                     <li>
+                        <a href="#">
+                            <span data-hover="Выход">Выход</span>
+                        </a>
+                    </li> 
+                </ul>
+            </div>
+    </nav>
+
+    <h1 class="sub_logo" style="color : #fff; text-align: center;"> User profile </h1>
     <section class="main_context">
         <div class="container">
             <div class="row">
@@ -368,10 +395,7 @@
         Добавлено в избранное
         </div>
     </footer>
-    
-    <script type="text/javascript">
-        VK.Widgets.Group("vk_groups", {mode: 4, width: "auto", wide: 1, height: "400"}, 155417759);
-    </script>
+    </main>
     <script src="libs/jquery/jquery-1.11.1.min.js"></script>
     <script src="libs/jquery-mousewheel/jquery.mousewheel.min.js"></script>
     <script src="libs/fancybox/jquery.fancybox.pack.js"></script>
@@ -382,6 +406,7 @@
     <script src="libs/countdown/jquery.countdown.min.js"></script>
     <script src="libs/countdown/jquery.countdown-ru.js"></script>
     <script src="libs/landing-nav/navigation.js"></script>
+    <script src="js/slideout.min.js"></script>
     <script src="js/common.js"></script>
     <!-- Yandex.Metrika counter --><!-- /Yandex.Metrika counter -->
     <!-- Google Analytics counter --><!-- /Google Analytics counter -->
