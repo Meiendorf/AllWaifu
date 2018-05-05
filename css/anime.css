@@ -1,5 +1,6 @@
 body, #main_el{
-    
+    background-color: #E2E2E2;
+    background-image: none !important;
 }
 .main_grid_anime
 {
