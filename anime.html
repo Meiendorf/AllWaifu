@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]><html lang="ru" class="lt-ie9 lt-ie8 lt-ie7"><![endif]-->
+<!--[if IE 7]><html lang="ru" class="lt-ie9 lt-ie8"><![endif]-->
+<!--[if IE 8]><html lang="ru" class="lt-ie9"><![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="ru">
+<!--<![endif]-->
+<head>
+    <meta charset="utf-8" />
+    <title>AllWaifu</title>
+    <meta name="description" content="" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="favicon.png" />
+    <link rel="stylesheet" href="libs/bootstrap/bootstrap-grid-3.3.1.min.css" />
+    <link rel="stylesheet" href="libs/font-awesome-4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="libs/fancybox/jquery.fancybox.css" />
+    <link rel="stylesheet" href="libs/owl-carousel/owl.carousel.min.css" />
+    <link rel="stylesheet" href="libs/owl-carousel/owl.theme.css" />
+    <link rel="stylesheet" href="libs/countdown/jquery.countdown.css" />
+    <link rel="stylesheet" href="css/fonts.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/anime.css" />
+    <link rel="stylesheet" href="css/media.css" />
+    <link rel="stylesheet" href="css/search.css" />
+    <link href='https://fonts.googleapis.com/css?family=Orbitron' rel='stylesheet'>
+</head>
+<body>
+    <!--[if lt IE 9]>
+    <script src="libs/html5shiv/es5-shim.min.js"></script>
+    <script src="libs/html5shiv/html5shiv.min.js"></script>
+    <script src="libs/html5shiv/html5shiv-printshiv.min.js"></script>
+    <script src="libs/respond/respond.min.js"></script>
+    <![endif]-->
+    <nav id="slideout_menu"> 
+        <div class="slideout_header"> 
+            <div class="heaven_search">
+                <input type="text" id="heaven_inp" placeholder="Поиск по сайту">
+            </div>
+        </div>
+        <ul class="main_slideout_menu">
+            <li>
+                <a href="#">
+                    Главная
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    Категории
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    Добавление
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                   Новости 
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    Помощь
+                </a>
+            </li>
+        </ul>
+        <div class ="search_sort search_mobile">
+            <div class="search_sort_head">
+                Сортировка
+            </div>
+            <ul class = "search_radio">
+                <li>
+                    <input type="radio" id="PopularRadioM" name="sort_type">
+                    <label for="PopularRadioM">По просмотрам</label>
+                    <div class="check"></div>
+                </li>
+                <li>
+                    <input type="radio" id="NewRadioM" name="sort_type">
+                    <label for="NewRadioM">По дате</label>
+                    <div class="check"></div>
+                </li>
+                <li>
+                    <input type="radio" id="AlphRadioM" name="sort_type">
+                    <label for="AlphRadioM">По имени</label>
+                    <div class="check"></div>
+                </li>
+                <span> </span>
+                <li>
+                    <input type="radio" id="AscRadioM" name="sort_der">
+                    <label for="AscRadioM">Возрастание</label>
+                    <div class="check"></div>
+                </li>
+                <li>
+                    <input type="radio" id="DescRadioM" name="sort_der">
+                    <label for="DescRadioM">Убывание</label>
+                    <div class="check"></div>
+                </li>
+                <li class="search_but_cont">
+                    <input class="search_sort_but" type="button" id="SaveSort" value="Отсортировать" style="width:100%"/>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <main id="main_el" style="height: 100%">
+    <nav class="heaven_menu">
+        <div class="slideout_button"> 
+            <i class="fa fa-bars" aria-hidden="true"></i>
+        </div>
+        <div class="heaven_menu_logo_cont">
+            <a href="#" style="grid-column: 2">
+                <img src="images/logo_z.svg" class="heaven_menu_logo"/>
+            </a>
+            <div class="heaven_search">
+                <input type="text" id="heaven_inp" placeholder="Поиск по сайту">
+            </div>
+        </div>
+        <div class="heaven_links">
+            <ul>
+                <li>
+                    <a href="#">
+                        Главная
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        Категории
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        Добавление
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                       Новости 
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        Помощь
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="header_login header_dropdown heaven_dropdown cl-effect-5">
+            <!--
+            <div class="header_login_link">
+                <a href="#" style="display: inline-block;">
+                    Вход
+                </a>
+            </div>
+            -->
+            <div class="user_dropdown">
+                <div class="user_dropdown_text" style="display: inline; margin-right: 5px;">
+                    Рома
+                </div>
+                <img src="https://pp.userapi.com/c841130/v841130814/52d87/tPiu_dLq0hA.jpg" class="user_dropdown_img">
+                <i class="fa fa-angle-down" aria-hidden="true"></i>
+            </div>
+            <ul class="dd_menu cl-effect-5">
+                <li>
+                    <a href="#">
+                        <span data-hover="Моя страница">Моя страница</span>
+                    </a>
+                </li>
+                 <li>
+                    <a href="#">
+                        <span data-hover="Настройки">Настройки</span>
+                    </a>
+                </li>
+                 <li>
+                    <a href="#">
+                        <span data-hover="Выход">Выход</span>
+                    </a>
+                </li> 
+            </ul>
+        </div>
+    </nav>
+
+    <section class="main_context">
+        <div class="main_grid_anime">
+            <div class="anime_el">
+                <div class="type_title">
+                    АНИМЕ
+                </div>
+                <div class="anime_img">
+                    <img src="http://i.imgur.com/eK4BTd7.jpg?1" alt="Img"/>
+                    <div class="anime_img_info">
+                        <div class="anime_title">
+                            To Love Ru : Darkness 2
+                        </div>
+                        <div class="add_info">
+                            <i class="fa fa-eye" aria-hidden="true"></i>
+                            <span>452840</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="anime_info">
+                    <div class="anime_desc_title">
+                        Описание
+                    </div>
+                    <div class="anime_desc">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi ratione ab architecto cupiditate a ad, vel deserunt. Perferendis cumque tempora odio a ut illum aliquid assumenda sapiente id, laboriosam asperiores itaque voluptatum mollitia, velit quam qui consequuntur ratione, excepturi voluptatem architecto nulla vitae. Quidem ea voluptate, similique iure provident corporis? Consectetur explicabo ad maiores voluptatum nulla enim eveniet, sint repellendus tempora sit quidem id nobis reprehenderit, nostrum corporis voluptatem. Ad sunt voluptatem, dolorum corrupti excepturi facilis cumque ut exercitationem recusandae, sequi assumenda atque consequatur quod dicta dolor quibusdam fugiat id quo. Error nulla ab non odio nisi veniam impedit minus!
+                    </div>
+                    <div class="anime_watch">
+                        <button type="button" >
+                            <a href="#">
+                                Смотреть 
+                            </a>
+                            <i class="fa fa-caret-right" aria-hidden="true" style="font-size : 15px; color : #fff" ></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="anime_waifu">
+                    <div class="anime_desc_title">
+                        Персонажи
+                    </div>
+                    <div class="search_els_anime cl-effect-5">
+                        <div class="search_el">
+                            <div class="search_el_img">
+                                <img src="images/momo.jpg">
+                                <div class="add_anime_waif_inf">
+                                    <div class="waif_inf_el">
+                                        <i class="fa fa-eye" aria-hidden="true"></i>
+                                        <span>19874</span>
+                                    </div>
+                                    <div class="waif_inf_el">
+                                        <i class="fa fa-heart" aria-hidden="true"></i>
+                                        <span>77156</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class ="search_el_text">
+                                <a class="search_el_name" href="#">
+                                    <span data-hover="Момо Белла Девилюк">Момо Белла Девилюк</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="search_el">
+                            <div class="search_el_img">
+                                <img src="http://oi61.tinypic.com/a0a3a1.jpg">
+                                <div class="add_anime_waif_inf">
+                                        <div class="waif_inf_el">
+                                            <i class="fa fa-eye" aria-hidden="true"></i>
+                                            <span>56899</span>
+                                        </div>
+                                        <div class="waif_inf_el">
+                                            <i class="fa fa-heart" aria-hidden="true"></i>
+                                            <span>30020</span>
+                                        </div>
+                                    </div>
+                            </div>
+                            <div class ="search_el_text">
+                                <a class="search_el_name" href="#">
+                                    <span data-hover="Золотая Тьма">Золотая Тьма</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="search_el">
+                            <div class="search_el_img">
+                                <img src="https://i.ytimg.com/vi/oTJq8qVvsvc/maxresdefault.jpg">
+                                <div class="add_anime_waif_inf">
+                                        <div class="waif_inf_el">
+                                            <i class="fa fa-eye" aria-hidden="true"></i>
+                                            <span>464467</span>
+                                        </div>
+                                        <div class="waif_inf_el">
+                                            <i class="fa fa-heart" aria-hidden="true"></i>
+                                            <span>25487</span>
+                                        </div>
+                                    </div>
+                            </div>
+                            <div class ="search_el_text">
+                                <a class="search_el_name" href="#">
+                                    <span data-hover="Юки Микан">Юки Микан</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="search_el">
+                            <div class="search_el_img">
+                                <img src="http://images6.fanpop.com/image/polls/1156000/1156406_1501276094968_full.jpg">
+                                <div class="add_anime_waif_inf">
+                                        <div class="waif_inf_el">
+                                            <i class="fa fa-eye" aria-hidden="true"></i>
+                                            <span>20454</span>
+                                        </div>
+                                        <div class="waif_inf_el">
+                                            <i class="fa fa-heart" aria-hidden="true"></i>
+                                            <span>1012</span>
+                                        </div>
+                                    </div>
+                            </div>
+                            <div class ="search_el_text">
+                                <a class="search_el_name" href="#">
+                                    <span data-hover="Котегава Юи">Котегава Юи</span>
+                                </a>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="anime_watch" style="padding : 0px 10px; margin-bottom : 10px;">
+                        <button type="button" >
+                            <a href="#">
+                                Добавить 
+                            </a>
+                            <i class="fa fa-caret-right" aria-hidden="true" style="font-size : 15px; color : #fff" ></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="anime_comments">
+                    <div class="anime_desc_title">
+                        Комментарии
+                    </div>
+                    <div class="waif_inp">
+                            <div class="row">
+                               <div class="col-md-10">
+                                   <textarea rows="1" placeholder="Текст комментария" 
+                                    name="wcomments" id="wcomments"></textarea>
+                               </div>
+                               <div class="col-md-2" style="margin-top : 5px";>
+                                   <button class="send_min_but" style="height : 31px;">
+                                       Отправить
+                                   </button>
+                               </div>
+                               <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                   <div class="comments">
+                                       <ul>
+                                           <li>
+                                               <div class="row">
+                                                   <div class="col-xs-3 col-sm-2 col-md-1 com_img">
+                                                       <a href="#">
+                                                           <img src="data:image/jpeg;base64,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"/>
+                                                       </a>
+                                                   </div>
+
+                                                   <div class="col-xs-9 col-sm-10 col-md-11">
+                                                       <div class="com_title">
+                                                           <a href="#">
+                                                               Рома Мельник
+                                                           </a>
+                                                       </div>
+                                                       <div class="com_text">
+                                                           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam, commodi.
+                                                       </div>
+                                                   </div>
+                                               </div>
+                                           </li>
+                                           <li>
+                                               <div class="row">
+                                                   <div class="col-xs-3 col-sm-2 col-md-1 com_img">
+                                                       <a href="#">
+                                                           <img src="https://pp.userapi.com/c604820/v604820266/43aad/mOkRxoM7ZXg.jpg"/>
+                                                       </a>
+                                                   </div>
+                                                   <div class="col-xs-9 col-sm-10 col-md-11">
+                                                       <div class="com_title">
+                                                           <a href="#">
+                                                               Нацуки Минамия
+                                                           </a>
+                                                       </div>
+                                                       <div class="com_text">
+                                                           Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, voluptates?
+                                                       </div>
+                                                   </div>
+                                               </div>
+                                           </li>
+                                           <li>
+                                               <div class="row">
+                                                   <div class="col-xs-3 col-sm-2 col-md-1 com_img">
+                                                       <a href="#">
+                                                           <img src="http://ecx.images-amazon.com/images/I/81--mL4vkeL._SL500_.jpg"/>
+                                                       </a>
+                                                   </div>
+                                                   <div class="col-xs-9 col-sm-10 col-md-11">
+                                                       <div class="com_title">
+                                                           <a href="#">
+                                                               Грегори Гордеевегори
+                                                           </a>
+                                                       </div>
+                                                       <div class="com_text">
+                                                           Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, qui.
+                                                       </div>
+                                                   </div>
+                                               </div>
+                                           </li>
+                                       </ul>
+                                   </div>
+                               </div>
+                           </div>
+                       </div>
+                </div>
+            </div>
+            <div class="anime_top">
+                <div class="anime_top_title">
+                    <div class="anime_top_type">
+                        ТОП АНИМЕ
+                    </div>
+                    <input type="radio" checked name="anime_tabs" id="ViewsRadio"/>
+                    <label class="anime_tabs" for="ViewsRadio">Просмотры</label>               
+                    <input type="radio" name="anime_tabs" id="PersRadio"/>
+                    <label class="anime_tabs" for="PersRadio">Персонажи</label>
+                    <div class="anime_top_list" id="ViewsList">
+                            <div class="anime_top_els">
+                                <div class="anime_el_img">
+                                    <a href="#">
+                                        <img src="http://wallpoper.com/images/00/36/93/96/bakemonogatari-sengoku_00369396.jpg"/>
+                                    </a>
+                                    <div class="add_anime_waif_inf">
+                                        <i class="fa fa-eye" aria-hidden="true"></i>
+                                        <span>201454</span>
+                                    </div>
+                                </div>
+                                <div class="anime_el_name cl-effect-5">
+                                    <p>
+                                        <a href="#">
+                                            <span data-hover="Bakemonogotari">
+                                                Bakemonogotari
+                                            </span>
+                                        </a>
+                                    </p>
+                                </div>  
+                            </div>
+                            <div class="anime_top_els">
+                                <div class="anime_el_img">
+                                    <a href="#">
+                                        <img src="https://coubsecure-s.akamaihd.net/get/b33/p/coub/simple/cw_timeline_pic/b96d54639a9/ce8fd4de3e7918560c1f7/big_1492009602_image.jpg"/>
+                                    </a>
+                                    <div class="add_anime_waif_inf">
+                                        <i class="fa fa-eye" aria-hidden="true"></i>
+                                        <span>197987</span>
+                                    </div>
+                                </div>
+                                <div class="anime_el_name cl-effect-5">
+                                    <p>
+                                        <a href="#">
+                                            <span data-hover="Violet Evergarden">
+                                                Violet Evergarden
+                                            </span>
+                                        </a>
+                                    </p>
+                                </div>  
+                            </div>
+                            <div class="anime_top_els">
+                                <div class="anime_el_img">
+                                    <a href="#">
+                                        <img src="https://akibento.com/blog/wp-content/uploads/2018/01/konosuba.png"/>
+                                    </a>
+                                    <div class="add_anime_waif_inf">
+                                        <i class="fa fa-eye" aria-hidden="true"></i>
+                                        <span>145620</span>
+                                    </div>
+                                </div>
+                                <div class="anime_el_name cl-effect-5">
+                                    <p>
+                                        <a href="#">
+                                            <span data-hover="Konosuba">
+                                                Konosuba
+                                            </span>
+                                        </a>
+                                    </p>
+                                </div>  
+                            </div>
+                        </div>
+                        <div class="anime_top_list" id="PersList">
+                            <div class="anime_top_els">
+                                <div class="anime_el_img">
+                                    <a href="#">
+                                        <img src="https://akibento.com/blog/wp-content/uploads/2018/01/konosuba.png"/>
+                                    </a>
+                                    <div class="add_anime_waif_inf">
+                                            <i class="fa fa-user-circle-o" aria-hidden="true"></i>
+                                        <span>38</span>
+                                    </div>
+                                </div>
+                                <div class="anime_el_name cl-effect-5">
+                                    <p>
+                                        <a href="#">
+                                            <span data-hover="Konosuba">
+                                                Konosuba
+                                            </span>
+                                        </a>
+                                    </p>
+                                </div>  
+                            </div>
+                            <div class="anime_top_els">
+                                <div class="anime_el_img">
+                                    <a href="#">
+                                        <img src="http://i0.kym-cdn.com/photos/images/original/001/087/781/9e7.jpg"/>
+                                    </a>
+                                    <div class="add_anime_waif_inf">
+                                            <i class="fa fa-user-circle-o" aria-hidden="true"></i>
+                                        <span>28</span>
+                                    </div>
+                                </div>
+                                <div class="anime_el_name cl-effect-5">
+                                    <p>
+                                        <a href="#">
+                                            <span data-hover="Dagashi Kashi">
+                                                    Dagashi Kashi
+                                            </span>
+                                        </a>
+                                    </p>
+                                </div>  
+                            </div>
+                            <div class="anime_top_els">
+                                <div class="anime_el_img">
+                                    <a href="#">
+                                        <img src="https://i.ytimg.com/vi/Bc22cz1Q6GA/maxresdefault.jpg"/>
+                                    </a>
+                                    <div class="add_anime_waif_inf">
+                                            <i class="fa fa-user-circle-o" aria-hidden="true"></i>
+                                        <span>21</span>
+                                    </div>
+                                </div>
+                                <div class="anime_el_name cl-effect-5">
+                                    <p>
+                                        <a href="#">
+                                            <span data-hover="Princess Principal">
+                                                    Princess Principal
+                                            </span>
+                                        </a>
+                                    </p>
+                                </div>  
+                            </div>
+                        </div>
+                </div>
+
+                <div class="vk_news_anime" style="box-shadow: none; color : #fff;">
+                    <div class="type_title">
+                        МЫ В VK
+                    </div>
+                    <div id="vk_groups"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="norm_footer">
+        <div class="footer_els">
+            <div class="footer_el" style="color : #AAAAAA">
+                Copyright © 2017 Meiendorf Inc.
+            </div>
+            <div class="footer_el">
+                <a href="other_files/privacypolicy.htm" style="color:#fff;"> 
+                    Privacy Polisy
+                </a>
+            </div>
+            <div class="footer_el">
+                <a href="sitemap.xml" style="color:#fff;">
+                    Sitemap
+                </a>
+            </div>
+        </div>
+    </footer>
+    <!--<footer class="main_footer">
+        <div class="container" align="center">
+            <ul class="footer_ul">
+                <li style="color : #9D9D9D; font-weight: normal;">
+                    Copyright © 2017 Meiendorf Inc.
+                </li>
+                <li>
+                    <a href="other_files/privacypolicy.htm" style="color:#fff;"> 
+                    Privacy Polisy
+                    </a>
+                </li>
+                <li>
+                    <a href="sitemap.xml" style="color:#fff;">
+                    Sitemap
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="pop_div">
+        Добавлено в избранное
+        </div>
+    </footer>-->
+    </main>
+    <script src="js/vk_openapi.js"></script>
+    <script type="text/javascript">
+		VK.Widgets.Group("vk_groups", {mode: 4, width: "auto", wide: 1, height: "400"}, 155417759);
+	</script>
+    <script src="libs/jquery/jquery-1.11.1.min.js"></script>
+    <script src="libs/jquery-mousewheel/jquery.mousewheel.min.js"></script>
+    <script src="libs/fancybox/jquery.fancybox.pack.js"></script>
+    <script src="libs/waypoints/waypoints-1.6.2.min.js"></script>
+    <script src="libs/countdown/jquery.plugin.js"></script>
+    <script src="libs/countdown/jquery.countdown.min.js"></script>
+    <script src="libs/countdown/jquery.countdown-ru.js"></script>
+    <script src="libs/landing-nav/navigation.js"></script>
+    <script src="libs/owl-carousel/owl.carousel.min.js"></script>
+    <script src="js/slideout.min.js"></script>
+    <script src="js/common.js"></script>
+    <!-- Yandex.Metrika counter --><!-- /Yandex.Metrika counter -->
+    <!-- Google Analytics counter --><!-- /Google Analytics counter -->
+</body>
+</html>

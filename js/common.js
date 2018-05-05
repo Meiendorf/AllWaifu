@@ -52,40 +52,44 @@ $(document).ready(function() {
 		$(".pop_div").removeClass(remove);
 		$(".pop_div").addClass(add);
 		isPop = true;
-	}
-    $(".dd_menu")[0].style.display = "none";
+    }
+    try {
+        $(".dd_menu")[0].style.display = "none";
+    } catch(e){
+    
+    }
      
-    $(document).on("click", function(e){
-        var el = e.toElement;
-        if ((el.className == "user_dropdown") || 
-            (el.parentElement.className=="user_dropdown") ||
-            (el.parentElement.className == "dd_menu"))
-        {
-            return;
+    $(document).on("click", function (e) {
+        try {
+            if ($(".dd_menu")[0] != null) {
+                var el = e.toElement;
+                if ((el.className == "user_dropdown") ||
+                    (el.parentElement.className == "user_dropdown") ||
+                    (el.parentElement.className == "dd_menu")) {
+                    return;
+                }
+                if ($(".dd_menu")[0].style.display != "none") {
+                    $(".dd_menu").fadeOut(200);
+                }
+            }
         }
-        if ($(".dd_menu")[0].style.display != "none"){
-            $(".dd_menu").fadeOut(200);
-        }
-    })
+        catch (e) {
 
-    $(".user_dropdown").click(function(){
-        var el = $(".dd_menu");
-        if (el[0].style.display == "none"){
-            el.fadeIn(200);
-        }
-        else{
-            el.fadeOut(200);
         }
     });
 
-	//Попап менеджер FancyBox
-	//Документация: http://fancybox.net/howto
-	//<a class="fancybox"><img src="image.jpg" /></a>
-	//<a class="fancybox" data-fancybox-group="group"><img src="image.jpg" /></a>
-	$(".fancybox").fancybox();
+    $(".user_dropdown").click(function(){
+        var el = $(".dd_menu");
+        if (el[0] != null) {
+            if (el[0].style.display == "none") {
+                el.fadeIn(200);
+            }
+            else {
+                el.fadeOut(200);
+            }
+        }
+    });
 
-	//Каруселька
-	//Документация: http://owlgraphic.com/owlcarousel/
 	owl = $(".owl-carousel");
 	owl.owlCarousel({
 		items : 1,

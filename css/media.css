@@ -1,22 +1,30 @@
 /*==========  Desktop First Method  ==========*/
-
-/* Large Devices, Wide Screens */
-@media only screen and (min-height : 849px){
-    .main_footer
+@media only screen and (min-width : 1900px) {
+    .search_grid
     {
+        grid-template-columns: 6fr 1fr !important;
+    }
+}
+@media only screen and (min-height : 849px) {
+    .main_footer {
         position: absolute;
         bottom: 0;
         width: 100%;
     }
-    html
-    {
+
+    html {
         min-height: 100%;
         position: relative;
     }
 }
-@media only screen and (max-width : 1300px){
-    div.text_mask
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1300px) {
+    .main_grid_anime
     {
+        grid-template-columns: 9fr 4fr;
+        grid-template-areas: "anime_el anime_top";
+    }
+    div.text_mask {
         width: 45%;
         font-size: 40px;
     }
@@ -25,33 +33,29 @@
         grid-template-columns: 3fr 3fr 1fr;
     }
 }
-@media only screen and (max-width : 1150px){
 
+@media only screen and (max-width : 1150px) {
     .header_menu
     {
         grid-template-columns: 1fr 1fr 2fr 1fr 1fr;
     }
 
-    div.cool_content
-    {
-        display: none; 
+    div.cool_content {
+        display: none;
     }
-    div.cool_mobile_content
-    {
+
+    div.cool_mobile_content {
         display: block;
     }
-    div.main_grid
-    {
-        grid-gap : 10px;
+
+    div.main_grid {
+        grid-gap: 10px;
         grid-template-columns: 1fr minmax(335px, auto) 1fr;
-        grid-template-areas: 
-            "content content content"
-            ". auth ."
-            "footer footer footer";
+        grid-template-areas: "content content content" ". auth ." "footer footer footer";
     }
-    form.auth_form
-    {
-        margin : 25px 5px 55px 5px;
+
+    form.auth_form {
+        margin: 25px 5px 55px 5px;
     }
 }
 
@@ -60,21 +64,13 @@
     {
         grid-template-columns: 0fr 1fr 2fr;
     }
-    .vk_news
-    {
+    .vk_news {
         display: none;
     }
-    .load_but
-    {
-        display: none;
-    }
-    .load_but_mobile
-    {
-        display: block;
-    }
-    .edit_photo_grid
-    {
-        grid-template-columns : 2fr 2fr 1fr;
+
+
+    .edit_photo_grid {
+        grid-template-columns: 2fr 2fr 1fr;
     }
 }
 
@@ -91,7 +87,7 @@
     .heaven_menu
     {
         margin-top: 0;
-        grid-template-columns: 1fr 100px;
+        grid-template-columns: 1fr 4fr;
     }
     .heaven_dropdown
     {
@@ -101,85 +97,88 @@
     {
         display: block;
     }
-    .edit_photo_grid
-    {
+    .edit_photo_grid {
         grid-template-columns: 1fr 1fr;
     }
-    .edit_login_grid
-    {
+
+    .edit_login_grid {
         grid-template-columns: 30fr 1fr;
     }
-    .auth_links
-    {
+
+    .auth_links {
         display: none;
     }
-    .desk_menu li, .menu_el, .desk_menu a
-    {
+
+    .desk_menu li, .menu_el, .desk_menu a {
         width: 100%;
         float: none;
         display: block;
     }
-    .desk_menu, .b_search
-    {
+
+    .desk_menu, .b_search {
         display: none;
-        font-size : 17px;
+        font-size: 17px;
     }
-    .men_s
-    {
+
+    .men_s {
         border-radius: 0;
     }
-    .desk_menu li:last-of-type 
-    {
+
+    .desk_menu li:last-of-type {
         border-radius: 0px 0px 7px 7px;
     }
-    .desk_menu li:first-of-type a
-    {
+
+    .desk_menu li:first-of-type a {
         border-radius: 0;
         box-shadow: none;
         padding: 5px 15px;
     }
-    .waif_author
-    {
+
+    .waif_author {
         display: none;
     }
-    .xs-author
-    {
+
+    .xs-author {
         display: block;
     }
-     .usl_title
-    {
+
+    .usl_title {
         margin-top: 0;
-        margin : 0 15px;
+        margin: 0 15px;
         font-size: 24px;
     }
-    .user_waif_list li:last-of-type
+
+    .user_waif_list li:nth-child(3) {
+        display: none;
+    }
+
+    .chapter_label {
+        text-align: center;
+    }
+
+    .send_but_cont {
+        text-align: center;
+        grid-template-columns: 1fr;
+    }
+
+    .send_but_cont > .field_add_but {
+        float: none;
+        width: 90%;
+        margin: 5px auto !important;
+    }
+    #DesktopSort
     {
         display: none;
     }
-    .chapter_label
+    .search_grid
     {
-        text-align: center;
+        grid-template-columns: 1fr !important;
     }
-    .load_but
+    .main_grid_anime
     {
-        display: block;
-    }
-    .load_but_mobile
-    {
-        display: none;
-    }
-    .send_but_cont
-    {
-        text-align: center;
-    }
-    .send_but_cont > .field_add_but
-    {
-        float : none;
-        width: 30%;
-        margin : 5px 0px;
+        grid-template-columns: 6fr 4fr;
     }
 }
-
 @media only screen and (max-width: 940px){
     .header_menu
     {
@@ -189,38 +188,73 @@
 }
 /* Small Devices, Tablets */
 @media only screen and (max-width : 767px) {
+    .main_grid_anime
+    {
+        grid-template-columns: 1fr 6fr 1fr;
+        grid-template-areas: ". anime_el .";
+    }
+    .anime_top, .vk_news_anime
+    {
+        display: none;
+    }
+    .search_els_anime
+    {
+        grid-template-columns: 1fr;
+    }
+    .search_els
+    {
+        grid-template-columns: 1fr 1fr !important;
+    }
     .main_menu
     {
         margin-bottom : 15px;
     }
-    .error_img
-    {
-        width : 40%;
+    .error_img {
+        width: 40%;
     }
-    .over_text
-    {
+    .main_menu {
+        margin-bottom: 15px;
+    }
+
+    .over_text {
         padding: 5px 10px;
     }
-    .edit_pass_grid
-    {
+
+    .edit_pass_grid {
         grid-template-columns: 1fr 4fr 1fr;
-        grid-gap :  10px;
+        grid-gap: 10px;
     }
-    .edit_pass_el
-    {
+
+    .edit_pass_el {
         /*grid-column: 1;*/
     }
-    .edit_grid
-    {
+
+    .edit_grid {
         grid-template-columns: 1fr;
     }
-    .edit_photo_grid
-    {
+
+    .edit_photo_grid {
         grid-template-columns: 1fr 5fr 5fr 1fr;
     }
-    .edit_img
-    {
+
+    .edit_img {
         grid-column: 2 / 2;
+    }
+}
+@media only screen and (max-width : 650px){
+    .main_grid_anime
+    {
+        grid-template-columns: 1fr;
+        grid-template-areas: "anime_el";
+    }
+    .anime_img_info
+    {
+        grid-template-columns: 1fr;
+        grid-template-areas : "anime_title";
+    }
+    .add_info
+    {
+        display: none;
     }
 }
 @media only screen and (max-width: 600px){
@@ -234,135 +268,122 @@
         grid-template-areas: "h_logo h_login";
     }
 }
-
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px) {
-
+    .search_els
+    {
+        grid-template-columns: 1fr !important;
+    }
     .header_logo_text
     {
         display: none;
     }
+    .empty_block_image {
+        width: 60%;
+    }
+    .error_img {
+        width: 80%;
+    }
+    .edit_custom_grid {
+        grid-template-areas: "custom_desc custom_desc" "custom_name custom_name" "custom_url custom_url" ". save_butt"
+    }
 
-
-    .empty_block_image
-    {
-        width : 60%;
-    }
-    .error_img
-    {
-        width : 80%;
-    }
-    .edit_custom_grid
-    {
-        grid-template-areas: 
-                "custom_desc custom_desc"
-                "custom_name custom_name"
-                "custom_url custom_url"
-                ". save_butt"
-    }
-    .edit_pass_grid
-    {
+    .edit_pass_grid {
         grid-template-columns: 1fr 10fr 1fr;
     }
-    .edit_photo_grid
-    {
+
+    .edit_photo_grid {
         grid-template-columns: 1fr 1fr;
     }
-    .edit_img
-    {
+
+    .edit_img {
         grid-column: 1 / 1;
     }
-    .col-md-9, .col-md-3
-    {
-        padding : 0px 0px;
+
+    .col-md-9, .col-md-3 {
+        padding: 0px 0px;
     }
-    .user_inf_titles
-    {
-        margin-top : 20px;
+
+    .user_inf_titles {
+        margin-top: 20px;
         margin-bottom: 10px;
     }
-    .over_text
-    {
+
+    .over_text {
         display: none;
     }
-    .desk_menu li:first-of-type a
-    {
+
+    .desk_menu li:first-of-type a {
         padding: 5px 5px;
     }
-    .waif_img_cont, .load_but
-    {
+
+    .waif_img_cont {
         display: none;
     }
-    .mobile_waif_title
-    {
-        color : #fff;
+
+    .mobile_waif_title {
+        color: #fff;
         display: block;
     }
-    .waif_follow
-    {
-        color : #fff;
-        float : none;
+
+    .waif_follow {
+        color: #fff;
+        float: none;
         position: inherit;
         text-align: center;
     }
-    .waif_follow_but
-    {
+
+    .waif_follow_but {
         font-size: 20px;
     }
-    .waif_follow_but:hover
-    {
-        font-size : 20px;
+
+        .waif_follow_but:hover {
+            font-size: 20px;
+        }
+
+        .waif_follow_but:not(:hover) {
+            font-size: 20px;
+        }
+
+    .col-xs-6.waif_rec {
+        width: 100%;
     }
-    .waif_follow_but:not(:hover)
-    {
-        font-size : 20px;
-    }
-    .col-xs-6.waif_rec
-    {
-        width : 100%;
-    }
-    .load_but_mobile
-    {
-        display: block;
-    }
-    .add_but_cont
-    {
+
+
+    .add_but_cont {
         text-align: center;
     }
-    .add_but_cont > .field_add_but
-    {
-        width : 90%;
-        float: none;
-        margin-right: 0px;
-    }
-    .desc_field_content > .delete_el_but
-    {
-        right : -4px;
+
+        .add_but_cont > .field_add_but {
+            width: 90%;
+            float: none;
+            margin-right: 0px;
+        }
+
+    .desc_field_content > .delete_el_but {
+        right: -4px;
     }
 }
-@media only screen and (max-width : 380px)
-{
-    .edit_img
-    {
-       grid-column: 2 / 2; 
+
+@media only screen and (max-width : 380px) {
+    .edit_img {
+        grid-column: 2 / 2;
     }
-    .edit_photo_grid
-    {
+
+    .edit_photo_grid {
         grid-template-columns: 1fr 2fr 1fr;
     }
-    .edit_img_func
-    {
-        grid-column : 1 / -1;
+
+    .edit_img_func {
+        grid-column: 1 / -1;
     }
 }
 /* Custom, iPhone Retina */
-
 @media only screen and (max-width : 320px) {
-    
-}
-
-@media only screen and (max-width : 300px) {
-    
+    .norm_footer
+    {
+        display: none !important;
+    }
 }
 
 
@@ -370,31 +391,27 @@
 
 /* Custom, iPhone Retina */
 @media only screen and (min-width : 320px) {
-
+    
 }
 
 /* Extra Small Devices, Phones */
 @media only screen and (min-width : 480px) {
-
 }
 
 /* Small Devices, Tablets */
 @media only screen and (min-width : 768px) {
-   .sub_logo_min
-   {
+    .sub_logo_min {
         display: none;
-   }
+    }
 }
 
 /* Medium Devices, Desktops */
 @media only screen and (min-width : 992px) {
-    .desk_menu
-    {
+    .desk_menu {
         display: block !important;
     }
 }
 
- /* Large Devices, Wide Screens */
+/* Large Devices, Wide Screens */
 @media only screen and (min-width : 1200px) {
-    
 }

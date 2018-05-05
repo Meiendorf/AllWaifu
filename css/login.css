@@ -16,10 +16,17 @@
     font-size: 40px;
     color : #fff;
 }
-.err_message
+.err_message 
+{
+    font-size: 18px;
+    color: #BE230F;
+    height : 20px;
+    margin-bottom : 3px;
+}
+.err_label_message
 {
     font-size : 18px;
-    color : red;
+    color : #BE230F;
     margin-left : 20px;
 }
 .text_mask
@@ -31,7 +38,7 @@
     font-family: InkTankRegular;
     font-size: 50px;
 }
-input
+.login_field input
 {
     color : #000;
     width: 100%;
@@ -80,19 +87,19 @@ input
     display: inline-block;
     transition: 0.3s;
 }
-.social_login_list > li > a:before
-{
-    background-color: rgba(0,0,0,0);
+.social_login_list_input:hover {
+    transition: 0.3s;
+    box-shadow: 0 3px 5px rgba(0,1,6,.5) inset, 
+                0 0 1px 1px rgba(0,1,6,.2) inset;
 }
-.social_login_list > li:hover
-{
-    transition:  0.3s;
-    box-shadow: 0px 0px 10px 1px rgba(6,14,176,1);
-}
-.social_login_list img
-{
+.social_login_list_input {
     width: 40px;
+    border-radius : 5px;
     height: 40px;
+    transition: 0.3s;
+    box-shadow: 0 1px rgba(255,255,255,.2) inset,
+                0 3px 5px rgba(0,1,6,.5),
+                0 0 1px 1px rgba(0,1,6,.2);
 }
 .main_grid
 {
