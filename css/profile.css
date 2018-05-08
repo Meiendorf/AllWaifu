@@ -1,0 +1,137 @@
+body, #main_el {
+    background-color: #E2E2E2 !important;
+    background-image: none !important;
+}
+
+.profile_grid
+{
+    margin-top : 10px;
+    display: grid;
+    grid-template-columns: 1fr 12fr 3fr 1fr;
+    width: 100%;
+    grid-template-areas: ". profile_info prof_set .";
+}
+.profile_settings
+{
+    grid-area: prof_set;
+    margin-left : 0px;
+    margin-right : 20px;
+}
+.profile_settings i
+{
+    height: 20px;
+    width : 20px;
+}
+.profile_settings_els
+{
+    background-color: #fff;
+    color : #333;
+    display: grid;
+    font-size : 20px;
+    padding: 5px;
+}
+.profile_settings_el
+{
+    border-color : #E2E2E2;
+    border-style: solid;
+    padding: 4px;
+    border-width : 1px 1px 0px 1px;
+    transition : 0.3s;
+}
+.profile_settings_el:hover
+{
+    background-color: #E2E2E2;
+    transition : 0.3s;
+    cursor : pointer;
+}
+.profile_settings_el:last-of-type
+{
+    border-width: 1px 1px 1px 1px;
+}
+.profile_info
+{
+    grid-area : profile_info;
+    margin : 0px 20px;
+    display: grid;
+}
+.profile_info_content
+{
+    display: grid;
+    grid-template-columns: 25% 3fr;
+    background-color: #fff;
+    color : #333333;
+}
+.profile_image
+{
+    max-width: 200px;
+}
+.profile_info_el a
+{
+    margin-bottom : 2px;
+}
+.profile_info_el a span
+{
+    color : #29A4D0 !important;
+}
+.profile_info_list
+{
+    display: grid;
+    align-items: center;
+    font-size: 20px;
+    padding-left : 5px;
+}
+.profile_additional
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 10px;
+    margin-top : 10px;
+    padding-bottom: 5px;
+}
+.transparent_5p
+{
+    background: #E2E2E2;
+    height: 5px;
+    width: 100%;
+}
+.profile_description
+{
+    background-color: #fff;
+    color : #333333;
+    font-size : 20px;
+}
+.profile_description_text
+{
+    width: 100%;
+    padding: 5px 3px;
+}
+.link_type_title span
+{
+    color : #fff !important;
+}
+.link_type_title:hover
+{
+    padding-bottom: 0px;
+    cursor: pointer;
+}
+a.link_type_title
+{
+    padding : 6px;
+    display: block;
+}
+.link_type_title:hover span
+{
+    padding-bottom: 6px !important;
+}
+.waif_inp
+{
+    background-color: #fff;
+}
+.anime_desc_title
+{
+    background-color: #fff;
+}
+.anime_top_els:last-of-type
+{
+    margin-bottom: 0px !important;
+}

@@ -133,6 +133,9 @@
 {
     margin : 15px;
 }
+.search_el a span {
+    color : #fff !important;
+}
 .search_el_text
 {
     color : #000;

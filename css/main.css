@@ -91,7 +91,8 @@ body{
     display: inline-block;
     -webkit-transition: -webkit-transform 0.3s;
     -moz-transition: -moz-transform 0.3s;
-    transition: transform 0.3s;
+	transition: transform 0.3s;
+	color : #333;
 }
 
 .cl-effect-5 a span::before {
@@ -101,7 +102,8 @@ body{
     font-weight: 700;
     -webkit-transform: translate3d(0,0,0);
     -moz-transform: translate3d(0,0,0);
-    transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+	color : #29A4D0;
 }
 
 .cl-effect-5 a:hover span,
@@ -119,12 +121,21 @@ body{
     width: 100px;
     transition: 0.3s;
 }
+.dd_menu span {
+    color : #fff !important;
+    transition : 0.3s;
+}
+.dd_menu a span::before
+{
+    color : #fff !important;
+}
 
 .dd_menu a:hover
 {
     transition: 0.3s;
     background-color: #29A4D0;
 }
+
 .dd_menu
 {
     list-style-type: none;
