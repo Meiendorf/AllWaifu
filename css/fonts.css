@@ -54,6 +54,7 @@
 	font-family: "InkTankRegular";
 	src: url("../fonts/InkTank.regular.ttf");
 }
+
 @font-face {
 	font-family: "BravoRegular";
 	src: url("../fonts/BravoRegular/BravoRegular.eot");
@@ -63,3 +64,22 @@
 	font-style: normal;
 	font-weight: normal;
 }
+/** OPENSANS **/
+@font-face{
+	font-family : "RubikLight";
+	src : url("../fonts/Rubik/Rubik-Light.ttf")
+}
+@font-face{
+	font-family : "RubikRegular";
+	src : url("../fonts/Rubik/Rubik-Regular.ttf")
+}
+@font-face{
+	font-family : "RubikItalic";
+	src : url("../fonts/Rubik/Rubik-LightItalic.ttf")
+}
+@font-face{
+	font-family : "RubikMedium";
+	src : url("../fonts/Rubik/Rubik-Medium.ttf")
+}
+/** OPENSANS **/
+  

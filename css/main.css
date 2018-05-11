@@ -23,7 +23,7 @@ body textarea:required:valid {
 	
 }
 body{
-	font-family: "BravoRegular", sans-serif;
+	font-family: "RubikRegular", sans-serif;
 	font-size: 18px;
 	background-image: url(../images/bg_blue.png);
 }
@@ -117,8 +117,9 @@ body{
     color: #fff;
     font-size: 20px;
     display: block;
-    padding: 3px 6px;
-    width: 100px;
+	padding: 3px 5px;
+	font-size : 16px;
+	font-weight : normal;
     transition: 0.3s;
 }
 .dd_menu span {
@@ -169,6 +170,9 @@ body{
 }
 .user_dropdown
 {
+	font-family: "RubikLight";
+	font-size : 18px;
+	font-weight: normal;
     padding: 3px;
     margin : -3px 0px;
     display: inline-block;
@@ -208,7 +212,9 @@ body{
     border-style:solid;
     position: relative;
     border-color:#29A4D0;
-    margin-top: 20px;
+	margin-top: 20px;
+	font-family : "RubikLight";
+	font-weight : bold;
 }
 .heaven_links
 {
@@ -229,9 +235,10 @@ body{
 .header_login_link a {
     display: block;
     color: #fff;
-    padding: 14px;
-    font-weight: bold;
-    font-size: 20px;
+    padding: 16px;
+	font-weight: bold;
+	font-weight: normal;
+    font-size: 18px;
     transition: 0.3s;
 }
 
@@ -261,6 +268,7 @@ body{
 }
 .heaven_search
 {
+	font-family : "RubikItalic";
     grid-column: 3;
     padding: 12px 14px;
 }
@@ -319,8 +327,9 @@ body {
 {
     background-color: #333333;
     color : #fff;
-    font-weight: bold;
-    font-size : 20px;
+	font-weight: bold;
+	font-family : "RubikLight";
+    font-size : 16px;
 }
 #slideout_menu a
 {
@@ -679,10 +688,11 @@ box-shadow: inset -1px 2px 90px -2px rgba(102,117,255,1);
     bottom: -30px;
     width: 100%;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 16px;
     display: grid;
     background-color: #333333;
-    grid-template-columns: auto 300px auto;
+    grid-template-columns: auto 400px auto;
+    font-family: "RubikLight";
 }
 
 .footer_els {
@@ -701,7 +711,13 @@ box-shadow: inset -1px 2px 90px -2px rgba(102,117,255,1);
 
 .com_title a
 {
-	color : #000;
+	color : #333;
+	font-size : 18px;
+}
+.com_text
+{
+	font-size : 16px;
+	color : #333;
 }
 .com_img img
 {
@@ -1316,7 +1332,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', end
 	color : #fff;
 	transition: 0.3s;
 	font-weight: bold;
-    font-size : 22px;
+    font-size : 16px;
 }
 .send_min_but:hover
 {

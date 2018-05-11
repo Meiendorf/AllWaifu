@@ -32,6 +32,28 @@
     {
         grid-template-columns: 3fr 3fr 1fr;
     }
+    .heaven_links
+    {
+        display: none;
+    }
+    .heaven_menu_logo_cont
+    {
+        display: none;
+    }
+    .heaven_menu
+    {
+        margin-top: 0;
+        grid-template-columns: 1fr 4fr;
+    }
+    .heaven_dropdown
+    {
+        grid-column : 2;
+    }
+    .slideout_button
+    {
+        display: block;
+    }
+    
 }
 
 @media only screen and (max-width : 1150px) {
@@ -60,6 +82,7 @@
 }
 
 @media only screen and (max-width : 1200px) {
+    
     .heaven_menu_logo_cont
     {
         grid-template-columns: 0fr 1fr 2fr;
@@ -90,27 +113,7 @@
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 991px) {
-    .heaven_links
-    {
-        display: none;
-    }
-    .heaven_menu_logo_cont
-    {
-        display: none;
-    }
-    .heaven_menu
-    {
-        margin-top: 0;
-        grid-template-columns: 1fr 4fr;
-    }
-    .heaven_dropdown
-    {
-        grid-column : 2;
-    }
-    .slideout_button
-    {
-        display: block;
-    }
+    
     .edit_photo_grid {
         grid-template-columns: 1fr 1fr;
     }
@@ -200,6 +203,10 @@
     .profile_settings
     {
         display : none;
+    }
+    .profile_anime_popup
+    {
+        grid-template-columns: 1fr 4fr 1fr;
     }
 }
 @media only screen and (max-width: 940px){
@@ -312,6 +319,10 @@
 }
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px) {
+    .profile_anime_popup
+    {
+        grid-template-columns: 1fr 12fr 1fr;
+    }
     .search_els
     {
         grid-template-columns: 1fr !important;

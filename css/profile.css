@@ -133,5 +133,51 @@ a.link_type_title
 }
 .anime_top_els:last-of-type
 {
-    margin-bottom: 0px !important;
+    margin-bottom: 0px;
+}
+.profile_anime_popup
+{
+    width:100%;
+    min-height:100%;
+    background-color: rgba(0,0,0,0.5);
+    overflow:hidden;
+    position:fixed;
+    top:0px;
+    z-index : 999;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: ". p_box .";
+    align-items : center;
+}
+.profile_anime_cont
+{
+    display: none;
+}
+.profile_popup_box
+{
+    grid-area : p_box;
+    margin : auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    font-size : 20px;
+}
+.profile_popup_content
+{
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 3px;
+    grid-gap : 3px;
+    background-color: #fff;
+}
+.profile_popup_box textarea
+{
+    width : 100%;
+}
+.profile_popup_thumb
+{
+    
+}
+.anime_watch
+{
+    color : #fff;
 }
