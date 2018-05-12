@@ -1,4 +1,8 @@
 
+body, #main_el {
+    background-color: #E2E2E2 !important;
+    background-image: none !important;
+}
 .search_grid
 {
     display: grid;
@@ -12,13 +16,14 @@
 }
 .search_sort
 {
-    background-color: #333333;
-    margin : 15px;
-    grid-area : sesort;
+    background-color: #ffffff;
+    margin : 10px 15px;
     /*border-width:2px 0px 0px 0px;
 	border-style:solid;*/
     position: relative;
     height: 565px;
+    font-family: "RubikLight";
+    font-size : 20px;
     border-color:#29A4D0;
     text-align : center;
 }
@@ -48,6 +53,12 @@
 	border-style:solid;
     margin : 0px;
     font-size : 20px;
+    font-weight: normal;
+    background-color: #333;
+    color : #fff !important;
+}
+.search_mobile .search_sort ul li {
+    color: #fff !important;
 }
 .search_mobile ul li .check::before
 {
@@ -145,9 +156,10 @@
     padding: 0;
     overflow: auto;
 }
-
+.nsearch_side .search_sort ul li{
+    color: #333333;
+}
 .search_sort ul li{
-    color: #AAAAAA;
     display: block;
 	position: relative;
     width: 100%;
@@ -169,8 +181,7 @@
 .search_sort ul li label{
     display: block;
     position: relative;
-    font-weight: 600;
-    font-size: 24px;
+    font-size: 20px;
     padding-top: 4px;
     padding-left: 40px;
     height: 30px;
@@ -180,11 +191,14 @@
 }
 
 .search_sort ul li:hover label{
-    color: #FFFFFF;
+    color: #4FE18E;
+    transition : 0.3s;
 }
 
 .search_sort ul li .check{
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-items: center;
     position: absolute;
     border: 5px solid #AAAAAA;
     border-radius: 100%;
@@ -198,12 +212,11 @@
 }
 
 .search_sort ul li:hover .check {
-    border: 5px solid #FFFFFF;
+    border: 5px solid #4FE18E;
 }
 
 .search_sort ul li .check::before {
     display: block;
-    position: absolute;
     content: '';
     border-radius: 100%;
     height: 9px;
@@ -225,4 +238,105 @@
 
 .search_sort input[type=radio]:checked ~ label{
     color: #4FE18E;
+}
+
+
+/* .search_new */
+
+.nsearch_grid
+{
+    display: grid;
+    grid-template-columns: 1fr 12fr 3fr 1fr;
+    grid-template-areas: ". ns_els ns_side ."
+                         ". . ns_side ."
+                         ". ns_more . .";
+}
+.nsearch_els
+{
+    display: grid;
+    grid-area : ns_els;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top : 10px;
+    grid-gap : 8px;
+}
+.nsearch_el:nth-of-type(-n+4)
+{
+    margin-top : -8px;
+}
+.nsearch_els .type_title
+{
+    grid-column: 1/4;
+}
+
+.nsearch_more
+{
+    grid-area : ns_more;
+}
+.nsearch_side
+{
+    grid-area : ns_side;
+}
+.nsearch_el
+{
+    margin : 0px;
+    position: relative;
+}
+.type_title, .anime_top_title {
+    color: #fff;
+    background-color: #333333;
+    text-align: center;
+    font-size: 18px;
+    border-bottom: 2px #29A4D0 solid;
+    padding: 6px;
+    font-family: "RubikLight";
+    text-transform: uppercase;
+}
+.add_anime_waif_inf {
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.486);
+    font-size: 14px;
+    color: #fff;
+    font-family: "RubikLight";
+}
+
+.waif_inf_el {
+    display: inline-block;
+}
+.nsearch_el .search_el_img a
+{
+    padding: 0;
+}
+.nsearch_els .search_el_name
+{
+    font-size : 20px;
+}
+.search_el_type
+{
+    font-size : 16px;
+}
+.nsearch_more
+{
+    text-align : center;
+    font-family : "RubikLight";
+    padding: 5px 0px;
+    font-weight: normal;
+}
+.search_sort_but
+{
+    font-size : 20px;
+    padding: 5px;
+}
+.nsearch_more button
+{
+    padding: 5px !important;
+}
+.nsearch_more div
+{
+    display: inline;
+}
+.main_context
+{
+    margin-bottom: 0px;
 }

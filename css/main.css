@@ -80,6 +80,8 @@ body{
     grid-template-areas : "h_links . . . h_login";
 }
 .cl-effect-5 a {
+	font-family : "RubikLight";
+	font-weight: bold;
     overflow: hidden;
     padding: 0 4px;
     display: inline-block;
@@ -270,13 +272,13 @@ body{
 {
 	font-family : "RubikItalic";
     grid-column: 3;
-    padding: 12px 14px;
+	padding: 12px 14px;
+	font-weight : normal;
 }
 .heaven_search input
 {
     width: 100%;
     font-size: 20px;
-
 }
 
 /*Slideout styles */
@@ -333,6 +335,9 @@ body {
 }
 #slideout_menu a
 {
+	font-size: 20px;
+    color: #fff;
+    font-weight: normal;
     color : #fff;
 }
 .main_slideout_menu
