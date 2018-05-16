@@ -1,0 +1,137 @@
+.mainpage_grid
+{
+    margin-top : 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    word-break: break-all;
+    grid-template-areas: "mainp_rand mainp_new";
+}
+.mainp_waif_cont
+{
+    
+}
+.mainpage_personages
+{
+    margin-top : 47px;
+}
+.vk_news_anime
+{
+    margin-top : 10px;
+}
+.mainp_waif
+{
+    grid-area : mainp_waif;
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+}
+.mainp_waif .search_el_text
+{
+    position : initial;
+    background-color: #fff !important;
+}
+.mainp_waif .nsearch_el:nth-of-type(-n+4)
+{
+    margin-top : -8px !important;
+}
+.row
+{
+    margin: 0;
+}
+.mainpp_row
+{
+    margin-top : 10px;
+    display : flex;
+    justify-content: center;
+}
+.search_el
+{
+    margin : 0px 1px !important;
+}
+.mainp_new
+{
+    grid-area : mainp_new;
+    background-color: #fff;
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-left: 2px;
+    grid-template-rows: 40px;
+}
+.mainp_random
+{
+    grid-area : mainp_rand;
+    margin-right: 2px;
+}
+.mainp_news_els
+{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+.mainp_new a
+{
+    width : 100%;
+    display: block;
+    color : #333;
+    height: 100%;
+}
+.mainp_date, .mainp_cont
+{
+    padding: 7.0px;
+    display: flex;
+    align-items: center;
+}
+
+.mainp_date
+{
+    border-color: #E2E2E2;
+    border-style: solid;
+    border-width: 0px 1px 0px 0px;
+    align-items: center;
+    justify-items: center;
+    display: flex;
+    font-family: "RubikLight";
+}
+.mainp_news_el
+{
+    border-top : 1px solid #E2E2E2;
+    position: relative;
+}
+.mainp_news_el:nth-of-type(1)
+{
+    border-top : none;
+}
+.mainp_news_el .mainp_line
+{
+    content: '';
+    background-color: #29A4D0;
+    height: 100%;
+    width : 0px;
+    display: block;
+    position: absolute;
+    transition : 0.3s;
+}
+.mainp_news_el:hover .mainp_line
+{
+    width : 2px;
+    transition: 0.3s;
+}
+
+.mainp_news_el:nth-of-type(even)
+{
+    background-color: #F5F5F5;
+}
+.mainp_news_cont
+{
+    height: 100%;
+    display: grid;
+    grid-template-columns: 70px 1fr;
+}
+.anime_top_list
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap : 5px;
+}
+.anime_top_els
+{
+    margin: 0;
+}

@@ -131,17 +131,6 @@ body, #main_el {
         width: 100%;
     }
 
-.type_title, .anime_top_title {
-    color: #fff;
-    background-color: #333333;
-    text-align: center;
-    font-size: 18px;
-    border-bottom: 2px #29A4D0 solid;
-    padding: 6px;
-    font-family: "RubikLight";
-    text-transform: uppercase;
-}
-
 .anime_img_info {
     color: #fff;
     position: absolute;
