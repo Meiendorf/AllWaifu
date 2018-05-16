@@ -90,32 +90,5 @@ $(document).ready(function() {
         }
     });
 
-	owl = $(".owl-carousel");
-	owl.owlCarousel({
-		items : 1,
-		loop : true,
-		autoHeight : true,
-		//autoplay : true,
-	});
 
-	owl.on("mousewheel", ".owl-wrapper", function (e) {
-		if (e.deltaY > 0) {
-			owl.trigger("owl.prev");
-		} else {
-			owl.trigger("owl.next");
-		}
-		e.preventDefault();
-	});
-	$(".next_button").click(function(){
-		owl.trigger("next.owl.carousel");
-	});
-	$(".prev_button").click(function(){
-		owl.trigger("prev.owl.carousel");
-	});
-
-});
-$(window).load(function() {
-	owl.trigger("prev.owl.carousel");
-	owl.trigger("next.owl.carousel");
-	owl.trigger("resize.owl.carousel");
 });
