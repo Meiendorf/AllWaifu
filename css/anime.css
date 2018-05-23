@@ -191,6 +191,7 @@ body, #main_el {
     padding: 1px;
     margin : 5px 0px;
     transition: 0.3s;
+    
 }
 
     .anime_watch button:hover {
@@ -206,7 +207,9 @@ body, #main_el {
 
 .anime_watch {
     font-weight: bold;
-    font-size: 22px;
+    font-size: 20px;
+    font-family: "RubikLight";
+    color: #fff;
 }
 
 .anime_desc_title {

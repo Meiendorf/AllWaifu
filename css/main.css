@@ -1054,7 +1054,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', end
 }
 .load_image_cont
 {
-	font-size : 17px;
+	font-size : 16px;
 }
 .add_waif
 {
@@ -1067,44 +1067,38 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', end
 .chapter_input
 {
 	width : 100%;
+	padding: 4px;
 }
 .chapter_label
 {
 	font-weight: bold;
-	font-size : 23px;
+	font-size : 16px;
 	text-align: right;
 }
-.content_chapter
-{
-	margin: 20px 0px 10px 0px;
-}
+
 .description_chapter
 {
 	margin-top: 25px;
-	border-radius: 5px;
-	box-shadow:
-	   	0 1px rgba(255,255,255,.2) inset,
-	   	0 3px 5px rgba(0,1,6,.5),
-	   	0 0 1px 1px rgba(0,1,6,.2);
+	border: 0.09px #e2e2e2 solid;
+}
+.sub_desc_title
+{
+	display: grid;
+	grid-template-columns: 1fr 1fr 8fr;
 }
 .desc_title
 {
 	padding : 5px;
 	position: relative;
 	text-align: center;
-	border-radius: 5px;
-	box-shadow:
-	   	0 0px rgba(255,255,255,.2) inset,
-	   	0 0px 0px rgba(0,1,6,.5),
-	   	0 0 1px 1px rgba(0,1,6,.2);
+	text-transform: none;
+	border-bottom: 2px solid #63D795 !important;
 }
-
 .desc_select, .desc_select_title
 {
 	float : left;
-	font-size: 21px;
-	margin-top : 5px;
-	border-radius: 5px;
+	background-color: #333333;
+	border: none;
 }
 .desc_select_title
 {
@@ -1115,12 +1109,17 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', end
 	width : 100%;
 	text-align: center;
 	border : 0px;
-	padding : 3px;
+	background-color: #333333;
+	font-size : 16px;
+}
+.sub_desc_title .field_input
+{
+	font-size : 20px;
 }
 .desc_field_row
 {
 	font-weight: bold;
-	font-size: 21px;
+	font-size: 16px;
 	margin: 5px;
 	padding : 3px;
 	padding-top: 11px;
@@ -1136,37 +1135,78 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', end
 {
 	padding : 3px;
 	width : 100%;
+	border: 1px #e2e2e2 solid;
 	font-weight : normal;
 }
 .delete_el_but
 {
 	position: absolute;
-	top : -12px;
-	right: -5px;
-	font-size: 25px;
-	font-weight: bold;
+    color: #BEBCBC;
+    font-weight: bold;
 	transition: 0.2s;
+}
+.desc_field_row .field_input
+{
+	background-color: #fff;
+	padding-bottom: 6px;
+	border : 1px #e2e2e2 solid;
+}
+.desc_title .delete_el_but
+{
+	top: 0.5px;
+	right: 0.2px;
+	font-size: 16px;
+	padding: 0px 6px;
+}
+.desc_field_content .delete_el_but
+{
+	right: 15px;
+    top: 0px;
+    font-size: 14px;
+    padding: 0px 5px;
 }
 .delete_el_but:hover
 {
 	transition: 0.2s;
-	color : #FF000D;
+	color : #fff;
+	background-color: #FF6666;
+	border-color : #FF6666;
 	cursor: pointer;
 }
-.desc_field_content > .delete_el_but
+.edit_grid .anime_watch
 {
-	right: 11px;
-	top : -10px;
-	font-size : 20px;
+	font-size: 20px;
+    color: #fff;
+    font-family: "RubikLight";
 }
-.add_but_cont
+.add_but_cont .anime_watch button
 {
-	margin-top : 15px;
+	margin: 0px 0px 10px 0px;
+    padding: 1px 25px;	
+}
+.add_but_cont .anime_watch
+{
+	display: inline-block;
+	float : right;
+	margin-right : 15px;
+}
+.send_but_cont .anime_watch
+{
+	margin-right : 0px;
 }
 .send_but_cont
 {
 	display: grid;
-	grid-template-columns: 2fr 1fr 1fr 1fr;
+	grid-gap: 10px;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.send_but_cont .anime_watch button
+{
+	padding: 1px;
+}
+.send_but_cont
+{
+	margin-top : 10px;
 }
 .send_but_cont > input
 {
@@ -1187,10 +1227,13 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', end
 .edit_grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    background-color: #fff;
-    box-shadow: 6px 6px 6px rgba(0,0,0,.5);
+	background-color: #fff;
+	font-size : 16px;
 }
-
+.edit_main_title
+{
+	margin-top : 10px;
+}
 .edit_img {
     width: 150px;
     height: 150px;
@@ -1231,7 +1274,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', end
     }
 
 .edit_el > .chapter_label {
-    margin-right: 10px;
+	margin-right: 10px;
+	align-self: center;
 }
 
 .edit_custom_grid {

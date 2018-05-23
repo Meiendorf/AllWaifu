@@ -27,7 +27,7 @@ body, #main_el {
     background-color: #fff;
     color : #333;
     display: grid;
-    font-size : 20px;
+    font-size : 18px;
     padding: 5px;
 }
 .profile_settings_el
@@ -77,7 +77,7 @@ body, #main_el {
 {
     display: grid;
     align-items: center;
-    font-size: 20px;
+    font-size: 16px;
     padding-left : 5px;
 }
 .profile_additional
@@ -103,11 +103,18 @@ body, #main_el {
 .profile_description_text
 {
     width: 100%;
+    font-family : "RubikRegular";
+    font-size : 16px;
     padding: 5px 3px;
 }
 .link_type_title span
 {
     color : #fff !important;
+    font-weight : normal;
+}
+.link_type_title span:before
+{
+    top : 103% !important;
 }
 .link_type_title:hover
 {

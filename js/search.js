@@ -19,11 +19,11 @@ function AddContent()
             var elements = JSON.parse(result);
             if ((elements.length == 0) && (offset == 0))
             {
-                $(location).attr('href', 'Error.aspx?error=NotFound');
+                //$(location).attr('href', 'Error.aspx?error=NotFound');
             }
             elements.forEach(function (el, i, elements) {
                 formated = FillTemplate(el);
-                $(".search_els")[0].append(formated[0]);
+                $(".nsearch_els")[0].append(formated[0]);
             });
             offset += elements.length;
             if (elements.length == 0)
@@ -37,7 +37,6 @@ function AddContent()
 }
 function Sort(t = "")
 {
-    
     if ($("#PopularRadio" + t)[0].checked)
     {
         by = "Popularity";
@@ -66,5 +65,6 @@ function FillTemplate(el) {
     temp.find(".search_el_name span")[0].dataset.hover = el["Name"];
     temp.find(".search_el_name span")[0].innerText = el["Name"];
     temp.find(".search_el_name")[0].href = "Waif.aspx?id=" + el["Id"];
+    temp.find(".waif_inf_el span")[0].innerText = el["Popularity"];
     return temp;
 }

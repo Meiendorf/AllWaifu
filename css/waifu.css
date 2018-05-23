@@ -1,0 +1,31 @@
+.nwaif_tag
+{
+    display: inline-block;
+    background-color: #187DCF;
+    font-size: 14px;
+    border-radius: 2px;
+    color: #ffffff;
+    margin-right : 3px;
+}
+.nwaif_tags
+{
+    display: inline-block;
+}
+.nwaif_tag_popular, .nwaif_tag_title
+{
+    display: inline-block;
+}
+.nwaif_content
+{
+    color : #333333;
+    font-size : 16px;
+}
+.nwaif_content .waif_cont_title
+{
+    font-family: "RubikLight";
+    font-size : 20px;
+}
+.waif_context #vk_groups
+{
+    
+}

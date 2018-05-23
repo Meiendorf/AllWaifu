@@ -1,10 +1,15 @@
-.cool_content
+html
 {
-    color : #fff;
-    font-size: 35px;
-    grid-area: content;
-    position: relative;
-    /*display: none;*/
+    height : 100%;
+}
+body
+{
+    background-position: right;
+    background-color: #8ED5FC !important;
+    background-repeat: no-repeat;
+    height: 100%;
+    background-size: cover;
+    background-image: url("../images/chi2.png") !important;
 }
 .cool_mobile_content
 {
@@ -14,7 +19,7 @@
     font-family: InkTankRegular;
     text-align: center;
     font-size: 40px;
-    color : #fff;
+    color : #333333;
 }
 .err_message 
 {
@@ -40,21 +45,18 @@
 }
 .login_field input
 {
-    color : #000;
+    color : #333;
+    font-family: "RubikRegular";
     width: 100%;
 }
 .auth_form
 {
     grid-area: auth;
-    background-color: rgba(13,13,13,.5);
-    color : #fff;
+    background-color: #fff;
+    color : #333;
     margin-right: 10px;
     font-size: 20px;
-    border-radius: 5px;
-    box-shadow:
-        0 1px rgba(255,255,255,.2) inset,
-        0 3px 5px rgba(0,1,6,.5),
-        0 0 1px 1px rgba(0,1,6,.2);
+    font-family: "RubikLight";
 }
 .login_input
 {
@@ -71,55 +73,43 @@
 }
 .login_but
 {
-    margin: 10px 35px;
-    font-size: 23px;
+  color : #fff;
+  margin : 5px 15px;
+}
+.login_to_regist .anime_watch
+{
+    margin : 0px 10px;
 }
 .social_login_list
 {
     list-style-type: none;
     padding: 0;
     margin: 0;
+    margin-bottom: 10px;
     text-align: center;
 }
 .social_login_list > li
 {
-    margin : 3px 7px;
+    margin : 3px 5px;
     display: inline-block;
     transition: 0.3s;
+    width : 40px;
+    height : 40px;
 }
-.social_login_list_input:hover {
-    transition: 0.3s;
-    box-shadow: 0 3px 5px rgba(0,1,6,.5) inset, 
-                0 0 1px 1px rgba(0,1,6,.2) inset;
-}
-.social_login_list_input {
-    width: 40px;
-    border-radius : 5px;
-    height: 40px;
-    transition: 0.3s;
-    box-shadow: 0 1px rgba(255,255,255,.2) inset,
-                0 3px 5px rgba(0,1,6,.5),
-                0 0 1px 1px rgba(0,1,6,.2);
-}
+
 .main_grid
 {
     margin-top: 10px;
     display: grid;
-    grid-template-columns: 3fr minmax(335px, auto);
+    grid-template-columns: 2fr 1fr 2fr;
+    height : 100%;
     grid-template-areas: 
         "content auth"
         "footer footer";
 }
 .login_to_regist
 {
-    display: grid;
     padding: 7px;
-    grid-template-columns: 1fr 1fr;
-}
-.login_to_regist > .waif_cont_title
-{
-    font-size: 20px;
-    margin-top: 8px;
 }
 .comm_but
 {
@@ -128,16 +118,9 @@
 .login_input > input
 {
     padding: 1px 3px;
-    border : none;
-    border-radius: 3px;
-    box-sizing : content-box;
-    box-shadow: 0px 1px 4px 0px rgba(168, 168, 168, 0.6) inset;
-    transition: all 0.2s linear;
+    border : 1px solid #e2e2e2;
 }
-.login_input > input:active,
-.login_input > input:focus{
-    box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 1) inset;
-}
+
 .regist_form
 {
     grid-area: auth;
